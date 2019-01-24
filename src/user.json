@@ -1,0 +1,29 @@
+
+{
+  "user": [
+    {
+      "name": "Robert",
+      "surname": "1",
+      "rol": "Jefe",
+      "headquorter": "YYYY"
+    },
+    {
+      "name": "Sergio",
+      "surname": "2",
+      "rol": "Jefe 2",
+      "headquorter": "YYYY"
+    },
+    {
+      "name": "Isassdddddddddddi .",
+      "surname": "3",
+      "rol": "Jefe 3",
+      "headquorter": "LLLL"
+    },
+    {
+      "name": "Oscar",
+      "surname": "4",
+      "rol": "Jefe4",
+      "headquorter": "RRRR"
+    }
+  ]
+}
