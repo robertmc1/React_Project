@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navigation from './components/Navigation';
+
 import Cabecera from './components/Cabecera';
+import FormularioAddUser from './components/FormularioAddUser'
 
 import {user} from './user.json'
 
@@ -17,9 +18,9 @@ class App extends Component {
 
   render() {
     const user = this.state.user.map((user,i) => {
+
       return(
           <div className="card">
-            
 
             <div className="grid-container">
               <div>
@@ -36,17 +37,16 @@ class App extends Component {
             </div>
             </div>
 
-
           </div>
       )
     });
 
 
     return (
-      <div className="App">
-        <Cabecera nombreDeUsuario="Nombre "/>
-
+      <div>
+        <Cabecera />
         {user}
+        <FormularioAddUser/>
 
       </div>
     );

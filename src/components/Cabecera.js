@@ -3,31 +3,28 @@ import  React, {Component} from 'react';
 class Cabecera extends Component{
     render(){
         return(
-            <div id={"cuadrogeneral"}>
+            <div id="cuadrogeneral">
                 <div id='headTitle' >
-                    User
+                    Add user
                 </div>
 
-
-
-
                 <nav >
-                    <div className="grid-container-cabecera">
+                    <div  className="grid-container-cabecera">
                         <div>
-                            ewreewrw
+                            Name
                         </div>
                         <div>
-                            ewrwerewr
+                            Surname
                         </div>
                         <div>
-                           werwerwer
+                            Roel
                         </div>
                         <div>
-                            ewrwerwer
+                            Headquorter
                         </div>
                     </div>
-
                 </nav>
+
             </div>
         )
     }

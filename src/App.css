@@ -1,5 +1,7 @@
 
 
+/*------------- tabla datos -----------------*/
+
 #cuadrogeneral{
   margin-top: 50px;
   margin-right: 50px;
@@ -13,6 +15,12 @@
   color: white;
 }
 
+#headTitleBlue{
+    background: #3bd9e2;
+    padding: 10px;
+    padding-left: 30px;
+    color: #f7fcff;
+}
 
 .card{
   margin-left: 50px;
@@ -43,4 +51,54 @@
 .grid-container-cabecera > div {
   text-align: center;
   font-size: 16px;
+}
+
+/*----------------Formulario -----------------*/
+
+form {
+    /* Sólo para centrar el formulario a la página */
+    margin:50px;
+    margin-left: 50px;
+    width: auto;
+    /* Para ver el borde del formulario */
+    border: 1px solid rgba(158, 163, 158, 0.6);
+}
+#paddingForm{
+    padding: 40px;
+    padding-top: 20px;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 2px 2px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid #E24A29;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    float: right;
+    margin-top: 21%;
+}
+
+.grid-container-form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-container-form > div {
+    font-size: 14px;
+}
+
+#textoGrande{
+    color: #E24A29;
+    font-size: 25px;
+    font-family: fsans-serif;
+    font-weight: bold;
 }
