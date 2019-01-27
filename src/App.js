@@ -21,13 +21,9 @@ class App extends Component {
 
   handleAddUser(users){
       this.setState({
-
           user:[...this.state.user,users]
-
       })
   }
-
-
 
   render() {
     const user = this.state.user.map((user,i) => {
@@ -45,7 +41,7 @@ class App extends Component {
                 </div>
 
                 <div id="rol">
-                  {user.rol}
+                  {user.role}
                 </div>
 
                 <div id="role">
@@ -57,7 +53,6 @@ class App extends Component {
       )
     });
 
-
     return (
         <div>
             <Header/>
@@ -68,7 +63,6 @@ class App extends Component {
             </div>
             <Footer/>
         </div>
-
     );
   }
 }

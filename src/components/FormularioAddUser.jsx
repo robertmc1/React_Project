@@ -10,7 +10,7 @@ class FormularioAddUser extends Component {
             mail:'',
             phone:'',
             headquorter:'Australia',
-            rol:'Fouter'
+            role:'Fouter'
         };
         this.handleInput = this.handleInput.bind(this);
         this.handleSubmit= this.handleSubmit.bind(this);
@@ -21,16 +21,12 @@ class FormularioAddUser extends Component {
         this.setState({
             [name]: value
         });
-        console.log(this.state)
     }
 
     handleSubmit(e){
         e.preventDefault();
         this.props.onAddUser(this.state);
-
     }
-
-
 
     render() {
         return (
@@ -42,65 +38,66 @@ class FormularioAddUser extends Component {
 
                      <div className="grid-container-form" id="paddingForm">
                          <div >
-                             <div id="divForm" >
-                                 <div>
-                                    <label htmlFor="name" id="textoGrande">Name:</label>
-                                 </div>
+                             <div>
+                                 <label id="textoGrande">Name:</label>
                                  <div>
                                      <input
                                          onChange={this.handleInput}
                                          type="text"
                                          name="name"
                                          placeholder="First Name"
+                                         minLength="3"
+                                         maxLength="40"
+                                         required
                                      />
                                  </div>
                              </div>
-                             <div id="divForm">
-                                 <div>
-                                     <label htmlFor="name" id="textoGrande">Surname:</label>
-                                 </div>
+                             <div>
+                                 <label id="textoGrande">Surname:</label>
                                  <div>
                                      <input
                                          onChange={this.handleInput}
                                          type="text"
                                          name="surname"
                                          placeholder="Last name"
+                                         minLength="3"
+                                         maxLength="40"
+                                         required
                                      />
                                  </div>
                              </div>
-                             <div id="divForm">
-                                 <div>
-                                     <label htmlFor="mail" id="textoGrande">E-mail:</label>
-                                 </div>
+                             <div>
+                                 <label id="textoGrande">E-mail:</label>
                                  <div>
                                      <input
                                          onChange={this.handleInput}
-                                         type="text"
-                                         name="mail"
+                                         type="email"
+                                         name="email"
                                          placeholder="Email"
+                                         required
                                      />
                                  </div>
                              </div>
-                             <div id="divForm">
-                                 <div>
-                                     <label htmlFor="phone" id="textoGrande">Phone:</label>
-                                 </div>
+                             <div>
+                                 <label id="textoGrande">Phone:</label>
 
                                  <div>
                                      <input
                                          onChange={this.handleInput}
-                                         type="text"
+                                         type="tel"
                                          name="phone"
                                          placeholder="Phone number"
+                                         pattern="[0-9]{9}"
+                                         required
                                      />
                                  </div>
                              </div>
                          </div>
 
                          <div id="divFormRight">
-                             <div id="divForm" >
-                                 <p id="textoGrande"><b> Headquorter</b></p>
-                                 <label htmlFor="Headquorter">Headquorter:</label>
+                             <div>
+                                 <p id="textoGrande">Headquorter</p>
+                                 <label>Headquorter:</label>
                                  <select
                                      name="headquorter"
                                      onChange={this.handleInput}>
@@ -109,9 +106,9 @@ class FormularioAddUser extends Component {
                                      <option value="usa">USA</option>
                                  </select>
                              </div>
-                             <div id="divForm">
-                                 <p id="textoGrande"> Rol</p>
-                                 <label htmlFor="Rol">Rol:</label>
+                             <div>
+                                 <p id="textoGrande">Role</p>
+                                 <label>Role:</label>
                                  <select
                                      name="rol"
                                      onChange={this.handleInput}>

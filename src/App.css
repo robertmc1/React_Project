@@ -13,6 +13,7 @@
   padding: 10px;
   padding-left: 30px;
   color: white;
+  font-size: 17px;
 }
 
 #headTitleBlue{
@@ -68,14 +69,17 @@ form {
     padding-top: 20px;
 }
 
-input[type=text] {
-    width: 50%;
-    padding: 2px 2px;
-    margin: 5px 0;
+input{
+    width: 60%;
     border: none;
     border-bottom: 1px solid #E24A29;
 }
 
+select{
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid #E24A29;
+}
 
 .grid-container-form{
     display: grid;
@@ -91,6 +95,8 @@ input[type=text] {
     font-size: 25px;
     font-family: fsans-serif;
     font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .boton_1{
@@ -107,6 +113,20 @@ input[type=text] {
     opacity: 0.6;
     text-decoration: none;
 }
+
+select{
+    margin:8px;
+}
+
+
+/* -------------------VALIDACION DE FORMULARTIO------------------*/
+
+
+input:valid {
+    border: none;
+    border-bottom: 1px solid #3bd9e2;
+}
+
 
 /* -------------------HEADER------------------*/
 
