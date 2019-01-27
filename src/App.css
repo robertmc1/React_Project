@@ -1,6 +1,6 @@
 
 
-/*------------- tabla datos -----------------*/
+/*------------- PRESENTACION EN DATOS TABLA -----------------*/
 
 #cuadrogeneral{
   margin-top: 50px;
@@ -53,7 +53,7 @@
   font-size: 16px;
 }
 
-/*----------------Formulario -----------------*/
+/*----------------FORMULARIO-----------------*/
 
 form {
     /* Sólo para centrar el formulario a la página */
@@ -96,7 +96,7 @@ input[type=submit] {
     font-size: 14px;
 }
 
-#textoGrande[]{
+#textoGrande{
     color: #ff381a;
     font-size: 25px;
     font-family: fsans-serif;
@@ -104,13 +104,7 @@ input[type=submit] {
 }
 
 /* -------------------HEADER------------------*/
-#demiumTitle{
-    float:Left;
-    font-family: "Lucida Bright";
-    font-size: 25px;
-    color: white;
-    margin: 1%;
-}
+
 
 #header {
     list-style-type: none;
@@ -121,8 +115,12 @@ input[type=submit] {
     background: #ff381a;
 }
 
-.botonesMenu {
-    float: right;
+#demiumTitle{
+    float:Left;
+    font-family: "Lucida Bright";
+    font-size: 25px;
+    color: white;
+    margin: 1%;
 }
 
 #header a {
@@ -132,6 +130,20 @@ input[type=submit] {
     padding: 14px 16px;
 }
 
+.botonesMenu {
+    float: right;
+}
+
+
 /*---------------------FOOTER---------------------*/
 
-
+.footer{
+    position: absolute;
+    height: 85px;
+    width: 100%;
+    background: #ff381a;
+    padding: 31px;
+    font-family: "Lucida Bright";
+    font-size: 15px;
+    color: white;
+}
