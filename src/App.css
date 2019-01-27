@@ -76,16 +76,6 @@ input[type=text] {
     border-bottom: 1px solid #E24A29;
 }
 
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    float: right;
-    margin-top: 21%;
-}
 
 .grid-container-form{
     display: grid;
@@ -101,6 +91,21 @@ input[type=submit] {
     font-size: 25px;
     font-family: fsans-serif;
     font-weight: bold;
+}
+
+.boton_1{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    float: right;
+    margin-top: 21%;
+}
+.boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
 }
 
 /* -------------------HEADER------------------*/

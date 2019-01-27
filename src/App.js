@@ -15,8 +15,19 @@ class App extends Component {
 
     this.state = {
       user
-    }
+    };
+    this.handleAddUser = this.handleAddUser.bind(this)
   }
+
+  handleAddUser(users){
+      this.setState({
+
+          user:[...this.state.user,users]
+
+      })
+  }
+
+
 
   render() {
     const user = this.state.user.map((user,i) => {
@@ -53,7 +64,7 @@ class App extends Component {
             <div>
                 <TablaMostrarDatosUser />
                 {user}
-                <FormularioAddUser/>
+                <FormularioAddUser onAddUser={this.handleAddUser}/>
             </div>
             <Footer/>
         </div>

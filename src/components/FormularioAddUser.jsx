@@ -2,27 +2,42 @@ import  React, {Component} from 'react';
 
 
 class FormularioAddUser extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
-            nombre: '',
-            apellido:'',
-            email:'',
-            telefono:'',
+            name: '',
+            surname:'',
+            mail:'',
+            phone:'',
             headquorter:'Australia',
-            role:'Fouter'
+            rol:'Fouter'
         };
+        this.handleInput = this.handleInput.bind(this);
+        this.handleSubmit= this.handleSubmit.bind(this);
     }
+
+    handleInput(e){
+        const {value, name} = e.target;
+        this.setState({
+            [name]: value
+        });
+        console.log(this.state)
+    }
+
+    handleSubmit(e){
+        e.preventDefault();
+        this.props.onAddUser(this.state);
+
+    }
+
+
 
     render() {
         return (
             <div>
-                 <form action="/my-handling-form-page" method="post">
+                 <form  method="post"  onSubmit={this.handleSubmit}>
                      <div id='headTitleBlue' >
                          User
-                         <div >
-                             <input type="submit" value="Submit"/>
-                         </div>
                      </div>
 
                      <div className="grid-container-form" id="paddingForm">
@@ -33,7 +48,7 @@ class FormularioAddUser extends Component {
                                  </div>
                                  <div>
                                      <input
-
+                                         onChange={this.handleInput}
                                          type="text"
                                          name="name"
                                          placeholder="First Name"
@@ -46,9 +61,10 @@ class FormularioAddUser extends Component {
                                  </div>
                                  <div>
                                      <input
-                                            type="text"
-                                            name="surname"
-                                            placeholder="Last name"
+                                         onChange={this.handleInput}
+                                         type="text"
+                                         name="surname"
+                                         placeholder="Last name"
                                      />
                                  </div>
                              </div>
@@ -58,7 +74,7 @@ class FormularioAddUser extends Component {
                                  </div>
                                  <div>
                                      <input
-
+                                         onChange={this.handleInput}
                                          type="text"
                                          name="mail"
                                          placeholder="Email"
@@ -72,7 +88,7 @@ class FormularioAddUser extends Component {
 
                                  <div>
                                      <input
-
+                                         onChange={this.handleInput}
                                          type="text"
                                          name="phone"
                                          placeholder="Phone number"
@@ -86,7 +102,7 @@ class FormularioAddUser extends Component {
                                  <p id="textoGrande"><b> Headquorter</b></p>
                                  <label htmlFor="Headquorter">Headquorter:</label>
                                  <select
-                                     name="country" id="pais"
+                                     name="headquorter"
                                      onChange={this.handleInput}>
                                      <option value="au">Australia</option>
                                      <option value="ca">Canada</option>
@@ -104,6 +120,7 @@ class FormularioAddUser extends Component {
                                      <option value="usa">YYYYY</option>
                                  </select>
                              </div>
+                             <button href="" className="boton_1" type="submit">Aceptar</button>
                          </div>
                      </div>
                  </form>
