@@ -14,7 +14,6 @@ class FormularioAddUser extends Component {
         };
     }
 
-
     render() {
         return (
             <div>
@@ -26,7 +25,6 @@ class FormularioAddUser extends Component {
                          </div>
                      </div>
 
-
                      <div className="grid-container-form" id="paddingForm">
                          <div >
                              <div id="divForm" >
@@ -35,10 +33,11 @@ class FormularioAddUser extends Component {
                                  </div>
                                  <div>
                                      <input
-                                         onChange={""}
+
                                          type="text"
                                          name="name"
-                                         placeholder="First Name" />
+                                         placeholder="First Name"
+                                     />
                                  </div>
                              </div>
                              <div id="divForm">
@@ -46,10 +45,11 @@ class FormularioAddUser extends Component {
                                      <label htmlFor="name" id="textoGrande">Surname:</label>
                                  </div>
                                  <div>
-                                     <input onChange={""}
+                                     <input
                                             type="text"
                                             name="surname"
-                                            placeholder="Last name" />
+                                            placeholder="Last name"
+                                     />
                                  </div>
                              </div>
                              <div id="divForm">
@@ -58,10 +58,11 @@ class FormularioAddUser extends Component {
                                  </div>
                                  <div>
                                      <input
-                                         onChange={""}
+
                                          type="text"
                                          name="mail"
-                                         placeholder="Email" />
+                                         placeholder="Email"
+                                     />
                                  </div>
                              </div>
                              <div id="divForm">
@@ -71,10 +72,11 @@ class FormularioAddUser extends Component {
 
                                  <div>
                                      <input
-                                         onChange={""}
+
                                          type="text"
                                          name="phone"
-                                         placeholder="Phone number" />
+                                         placeholder="Phone number"
+                                     />
                                  </div>
                              </div>
                          </div>
@@ -85,7 +87,7 @@ class FormularioAddUser extends Component {
                                  <label htmlFor="Headquorter">Headquorter:</label>
                                  <select
                                      name="country" id="pais"
-                                     onChange={""}>
+                                     onChange={this.handleInput}>
                                      <option value="au">Australia</option>
                                      <option value="ca">Canada</option>
                                      <option value="usa">USA</option>
@@ -96,7 +98,7 @@ class FormularioAddUser extends Component {
                                  <label htmlFor="Rol">Rol:</label>
                                  <select
                                      name="rol"
-                                     onChange={""}>
+                                     onChange={this.handleInput}>
                                      <option value="au">Fouter</option>
                                      <option value="ca">XXXXX</option>
                                      <option value="usa">YYYYY</option>

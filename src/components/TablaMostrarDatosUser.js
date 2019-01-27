@@ -1,6 +1,6 @@
 import  React, {Component} from 'react';
 
-class Cabecera extends Component{
+class TablaMostrarDatosUser extends Component{
     render(){
         return(
             <div id="cuadrogeneral">
@@ -31,4 +31,4 @@ class Cabecera extends Component{
 }
 
 
-export default Cabecera;
+export default TablaMostrarDatosUser;

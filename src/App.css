@@ -9,7 +9,7 @@
 }
 
 #headTitle{
-  background: #E24A29;
+  background: #ff381a;
   padding: 10px;
   padding-left: 30px;
   color: white;
@@ -96,9 +96,42 @@ input[type=submit] {
     font-size: 14px;
 }
 
-#textoGrande{
-    color: #E24A29;
+#textoGrande[]{
+    color: #ff381a;
     font-size: 25px;
     font-family: fsans-serif;
     font-weight: bold;
 }
+
+/* -------------------HEADER------------------*/
+#demiumTitle{
+    float:Left;
+    font-family: "Lucida Bright";
+    font-size: 25px;
+    color: white;
+    margin: 1%;
+}
+
+#header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5%;
+    padding-right: 3%;
+    overflow: hidden;
+    background: #ff381a;
+}
+
+.botonesMenu {
+    float: right;
+}
+
+#header a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+/*---------------------FOOTER---------------------*/
+
+
