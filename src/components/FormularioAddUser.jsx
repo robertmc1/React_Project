@@ -9,8 +9,8 @@ class FormularioAddUser extends Component {
             surname:'',
             mail:'',
             phone:'',
-            headquorter:'Australia',
-            role:'Fouter'
+            headquorter:'',
+            role:''
         };
         this.handleInput = this.handleInput.bind(this);
         this.handleSubmit= this.handleSubmit.bind(this);
@@ -102,21 +102,20 @@ class FormularioAddUser extends Component {
                                 <select
                                     name="headquorter"
                                     onChange={this.handleInput}>
-                                    <option value="au">Australia</option>
-                                    <option value="ca">Canada</option>
-                                    <option value="usa">USA</option>
+                                    <option>Australia</option>
+                                    <option>Canada</option>
+                                    <option>USA</option>
                                 </select>
                             </div>
                             <div id="divForm">
-                                <p id="textoGrande"> Role</p>
                                 <p id="textoGrande"> Role</p>
                                 <label htmlFor="Rol">Role:</label>
                                 <select
                                     name="role"
                                     onChange={this.handleInput}>
-                                    <option value="au">Fouter</option>
-                                    <option value="ca">XXXXX</option>
-                                    <option value="usa">YYYYY</option>
+                                    <option>Fouter</option>
+                                    <option>XXXXX</option>
+                                    <option>YYYYY</option>
                                 </select>
                             </div>
                             <button href="" className="boton_1" type="submit">Aceptar</button>
