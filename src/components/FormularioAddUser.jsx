@@ -10,7 +10,7 @@ class FormularioAddUser extends Component {
             mail:'',
             phone:'',
             headquorter:'Australia',
-            role:'Fouter'
+            rol:'Fouter'
         };
         this.handleInput = this.handleInput.bind(this);
         this.handleSubmit= this.handleSubmit.bind(this);
@@ -21,106 +21,107 @@ class FormularioAddUser extends Component {
         this.setState({
             [name]: value
         });
+        console.log(this.state)
     }
 
     handleSubmit(e){
         e.preventDefault();
         this.props.onAddUser(this.state);
+
     }
 
     render() {
         return (
             <div>
-                 <form  method="post"  onSubmit={this.handleSubmit}>
-                     <div id='headTitleBlue' >
-                         User
-                     </div>
+                <form  method="post"  onSubmit={this.handleSubmit}>
+                    <div id='headTitleBlue' >
+                        User
+                    </div>
 
-                     <div className="grid-container-form" id="paddingForm">
-                         <div >
-                             <div>
-                                 <label id="textoGrande">Name:</label>
-                                 <div>
-                                     <input
-                                         onChange={this.handleInput}
-                                         type="text"
-                                         name="name"
-                                         placeholder="First Name"
-                                         minLength="3"
-                                         maxLength="40"
-                                         required
-                                     />
-                                 </div>
-                             </div>
-                             <div>
-                                 <label id="textoGrande">Surname:</label>
-                                 <div>
-                                     <input
-                                         onChange={this.handleInput}
-                                         type="text"
-                                         name="surname"
-                                         placeholder="Last name"
-                                         minLength="3"
-                                         maxLength="40"
-                                         required
-                                     />
-                                 </div>
-                             </div>
-                             <div>
-                                 <label id="textoGrande">E-mail:</label>
-                                 <div>
-                                     <input
-                                         onChange={this.handleInput}
-                                         type="email"
-                                         name="email"
-                                         placeholder="Email"
-                                         required
-                                     />
-                                 </div>
-                             </div>
-                             <div>
-                                 <label id="textoGrande">Phone:</label>
+                    <div className="grid-container-form" id="paddingForm">
+                        <div >
+                            <div id="divForm" >
+                                <div>
+                                    <label htmlFor="name" id="textoGrande">Name:</label>
+                                </div>
+                                <div>
+                                    <input
+                                        onChange={this.handleInput}
+                                        type="text"
+                                        name="name"
+                                        placeholder="First Name"
+                                    />
+                                </div>
+                            </div>
+                            <div id="divForm">
+                                <div>
+                                    <label htmlFor="name" id="textoGrande">Surname:</label>
+                                </div>
+                                <div>
+                                    <input
+                                        onChange={this.handleInput}
+                                        type="text"
+                                        name="surname"
+                                        placeholder="Last name"
+                                    />
+                                </div>
+                            </div>
+                            <div id="divForm">
+                                <div>
+                                    <label htmlFor="mail" id="textoGrande">E-mail:</label>
+                                </div>
+                                <div>
+                                    <input
+                                        onChange={this.handleInput}
+                                        type="text"
+                                        name="mail"
+                                        placeholder="Email"
+                                    />
+                                </div>
+                            </div>
+                            <div id="divForm">
+                                <div>
+                                    <label htmlFor="phone" id="textoGrande">Phone:</label>
+                                </div>
 
-                                 <div>
-                                     <input
-                                         onChange={this.handleInput}
-                                         type="tel"
-                                         name="phone"
-                                         placeholder="Phone number"
-                                         pattern="[0-9]{9}"
-                                         required
-                                     />
-                                 </div>
-                             </div>
-                         </div>
+                                <div>
+                                    <input
+                                        onChange={this.handleInput}
+                                        type="text"
+                                        name="phone"
+                                        placeholder="Phone number"
+                                    />
+                                </div>
+                            </div>
+                        </div>
 
-                         <div id="divFormRight">
-                             <div>
-                                 <p id="textoGrande">Headquorter</p>
-                                 <label>Headquorter:</label>
-                                 <select
-                                     name="headquorter"
-                                     onChange={this.handleInput}>
-                                     <option>Australia</option>
-                                     <option>Canada</option>
-                                     <option>USA</option>
-                                 </select>
-                             </div>
-                             <div>
-                                 <p id="textoGrande">Role</p>
-                                 <label>Role:</label>
-                                 <select
-                                     name="role"
-                                     onChange={this.handleInput}>
-                                     <option> Fouter</option>
-                                     <option>XXXXX</option>
-                                     <option>YYYYY</option>
-                                 </select>
-                             </div>
-                             <button href="" className="boton_1" type="submit">Aceptar</button>
-                         </div>
-                     </div>
-                 </form>
+                        <div id="divFormRight">
+                            <div id="divForm" >
+                                <p id="textoGrande"><b> Headquorter</b></p>
+                                <label htmlFor="Headquorter">Headquorter:</label>
+                                <select
+                                    name="headquorter"
+                                    onChange={this.handleInput}>
+                                    <option value="au">Australia</option>
+                                    <option value="ca">Canada</option>
+                                    <option value="usa">USA</option>
+                                </select>
+                            </div>
+                            <div id="divForm">
+                                <p id="textoGrande"> Rol</p>
+                                <label htmlFor="Rol">Rol:</label>
+                                <select
+                                    name="rol"
+                                    onChange={this.handleInput}>
+                                    <option value="au">Fouter</option>
+                                    <option value="ca">XXXXX</option>
+                                    <option value="usa">YYYYY</option>
+                                </select>
+                            </div>
+                            <button href="" className="boton_1" type="submit">Aceptar</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         );
     }
