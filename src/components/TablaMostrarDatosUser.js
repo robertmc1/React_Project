@@ -63,7 +63,7 @@ class TablaMostrarDatosUser extends Component{
                             Surname
                         </div>
                         <div>
-                            Roel
+                            Role
                         </div>
                         <div>
                             Headquorter

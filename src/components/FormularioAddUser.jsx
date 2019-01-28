@@ -10,7 +10,7 @@ class FormularioAddUser extends Component {
             mail:'',
             phone:'',
             headquorter:'Australia',
-            rol:'Fouter'
+            role:'Fouter'
         };
         this.handleInput = this.handleInput.bind(this);
         this.handleSubmit= this.handleSubmit.bind(this);
@@ -108,10 +108,11 @@ class FormularioAddUser extends Component {
                                 </select>
                             </div>
                             <div id="divForm">
-                                <p id="textoGrande"> Rol</p>
-                                <label htmlFor="Rol">Rol:</label>
+                                <p id="textoGrande"> Role</p>
+                                <p id="textoGrande"> Role</p>
+                                <label htmlFor="Rol">Role:</label>
                                 <select
-                                    name="rol"
+                                    name="role"
                                     onChange={this.handleInput}>
                                     <option value="au">Fouter</option>
                                     <option value="ca">XXXXX</option>
