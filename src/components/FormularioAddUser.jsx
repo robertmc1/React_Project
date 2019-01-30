@@ -1,6 +1,5 @@
 import  React, {Component} from 'react';
 
-
 class FormularioAddUser extends Component {
     constructor() {
         super();
@@ -12,25 +11,26 @@ class FormularioAddUser extends Component {
             headquorter:'',
             role:''
         };
+
         this.handleInput = this.handleInput.bind(this);
         this.handleSubmit= this.handleSubmit.bind(this);
     }
 
     handleInput(e){
         const {value, name} = e.target;
+
         this.setState({
             [name]: value
         });
-        console.log(this.state)
+        console.log(this.state);
     }
 
     handleSubmit(e){
         e.preventDefault();
         this.props.onAddUser(this.state);
-
     }
 
-    render() {
+render() {
         return (
             <div>
                 <form  method="post"  onSubmit={this.handleSubmit}>
@@ -73,10 +73,13 @@ class FormularioAddUser extends Component {
                                 <div>
                                     <input
                                         onChange={this.handleInput}
-                                        type="text"
+                                        type="text/javascript"
                                         name="mail"
                                         placeholder="Email"
+                                        required
+
                                     />
+
                                 </div>
                             </div>
                             <div id="divForm">
@@ -90,6 +93,7 @@ class FormularioAddUser extends Component {
                                         type="text"
                                         name="phone"
                                         placeholder="Phone number"
+
                                     />
                                 </div>
                             </div>

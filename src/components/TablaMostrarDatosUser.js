@@ -16,6 +16,7 @@ class TablaMostrarDatosUser extends Component{
     handleAddUser(users){
         this.setState({
             user:[...this.state.user,users]
+
         })
     }
 
