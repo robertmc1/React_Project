@@ -11,6 +11,10 @@
     "simple-react-validator": "^1.0.3",
     "validator": "^10.11.0"
   },
+  "engines": {
+    "npm": "6.6.0",
+    "node": "10,15,0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
