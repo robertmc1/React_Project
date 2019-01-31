@@ -31,6 +31,7 @@ class FormularioAddUser extends Component {
     }
 
 render() {
+
         return (
             <div>
                 <form  method="post"  onSubmit={this.handleSubmit}>
