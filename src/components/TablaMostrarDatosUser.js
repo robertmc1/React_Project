@@ -6,17 +6,14 @@ import FormularioAddUser from './FormularioAddUser';
 class TablaMostrarDatosUser extends Component{
     constructor(){
         super();
-
         this.state = {
             user
         };
-        this.handleAddUser = this.handleAddUser.bind(this)
     }
 
-    handleAddUser(users){
+    handleAddUser = (users) => {
         this.setState({
             user:[...this.state.user,users]
-
         })
     }
 
@@ -36,11 +33,11 @@ class TablaMostrarDatosUser extends Component{
                             {user.surname}
                         </div>
 
-                        <div id="rol">
+                        <div id="role">
                             {user.role}
                         </div>
 
-                        <div id="role">
+                        <div id="headquorter">
                             {user.headquorter}
                         </div>
                     </div>

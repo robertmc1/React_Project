@@ -1,46 +1,62 @@
-import {Component} from 'react';
+import  React, {Component} from 'react';
 
 class Tarjetas extends Component {
     constructor(){
         super();
-
     }
 
     render() {
-        const user = this.state.user.map((user,i) => {
-            return(
-                <div className="card">
+        return(
+            <div className={"tarjeta2"}>
+                <div className={"tarjeta-titulo"}>
+                    REAL UNICORN
+                    <button href="" className="boton_2" type="submit">View</button>
+                </div>
 
-                    <div className="grid-container">
-                        <div id="name">
-                            {user.name}
+                <div className={"tarjeta-dentro"}>
+                    <div id={"division-tj"}>
+                        <div>
+                            <div>Idea:</div>
+                            <div>City:</div>
+                        </div>
+                        <div>
+                            <div>Super App</div>
+                            <div>Madrid</div>
+                        </div>
+                    </div>
+
+                    <div className={"titulo"}>
+                        Team members
+                    </div>
+                    <div id={"division-tj"}>
+                        <div>
+                            <div>CEO</div>
+                            <div>CTO</div>
+                            <div>CMO</div>
+                        </div>
+                        <div>
+                            <div>Julia Hartz</div>
+                            <div>Baby Murphy</div>
+                            <div>Cliffi Hapiki</div>
                         </div>
 
-                        <div id="surname">
-                            {user.surname}
+                    </div>
+                    <div className={"titulo"}>
+                        Demium teams
+                    </div>
+                    <div id={"division-tj"}>
+                        <div>
+                            <div>PM</div>
+                            <div>TM</div>
                         </div>
-
-                        <div id="rol">
-                            {user.role}
-                        </div>
-
-                        <div id="role">
-                            {user.headquorter}
+                        <div>
+                            <div>Pepito Perez</div>
+                            <div>Pepita Perez</div>
                         </div>
                     </div>
 
                 </div>
-            )
-        });
 
-        return(
-            <div>
-                <div>
-                    REAL UNICORN
-                </div>
-                <div>
-
-                </div>
             </div>
         )
 

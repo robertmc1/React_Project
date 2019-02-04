@@ -1,12 +1,16 @@
 import React from "react";
 
-const Cities = (props) => {
-    return (
+import TablaMostrarDatosCity from "../../components/TarjetasMostrarDatosCity"
 
-        <div>
-            1
+
+const Teams = (props) => {
+    console.log(props);
+    return (
+        <div className={"display-in-box"}>
+            <TablaMostrarDatosCity/>
+
         </div>
     );
-}
+};
 
-export default Cities;
+export default Teams;

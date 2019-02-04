@@ -28,7 +28,6 @@ const AppRouter = () => {
                     {/*<Route path={'/:lang(es|en|pt)/product/:product_id'} component={Product} exact />*/}
                     {/*<Route path="*" component={Error404} exact/>*/}
                     <Route path="/404" component={Error404} exact/>
-
                     <Redirect to={'/404'}/>
                 </Switch>
                 <Footer />

@@ -1,31 +1,20 @@
-import  React, {Component} from 'react';
+import React, {Component} from "react";
+import {user} from "./user"
 
-class FormularioAddUser extends Component {
-    constructor() {
+class EditIdea extends Component {
+    constructor(){
         super();
         this.state = {
-            name: '',
-            surname:'',
-            mail:'',
-            phone:'',
-            headquorter:'',
-            role:''
-        };
+            ideaName:"",
+            bussinesMode:"",
+            description:"",
+            hedquorter:"",
+            teamName:"",
+            blockedDate:"",
+        }
     }
 
-    handleInput = (e) => {
-        const {value, name} = e.target;
-        this.setState({
-            [name]: value
-        });
-    }
-
-    handleSubmit = (e) => {
-        e.preventDefault();
-        this.props.onAddUser(this.state);
-    }
-
-render() {
+    render() {
 
         return (
             <div>
@@ -125,5 +114,5 @@ render() {
             </div>
         );
     }
+
 }
-export default FormularioAddUser;

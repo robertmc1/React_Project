@@ -126,6 +126,91 @@ input:valid {
 }
 
 
+
+/*----------------------TARJETAS City--------------------*/
+
+.tarjeta{
+    width: 300px;
+    height: 300px;
+    margin: 15%;
+    margin-right: 0px;
+}
+
+.tarjeta-titulo{
+    background:#ff381a ;
+    padding: 3%;
+    color: #f9fffe;
+    text-align: center;
+}
+
+.tarjeta-dentro{
+    padding: 4%;
+    border: 2px #ff381a  solid;
+    border-top: none;
+    width: 300px;
+    height: 300px;
+}
+
+.titulo{
+    color: #ff381a;
+    font-size: larger;
+    padding-left:1.5%;
+    margin: 3%;
+}
+
+#division-tj{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding-left: 4%;
+}
+
+.inL{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.TitFont{
+    color: #ff381a;
+}
+
+.boxi{
+    margin-bottom: 3%;
+}
+
+.boton_2{
+    background-color: #42acaf;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    float: right;
+    margin-top: 15%;
+}
+.boton_2:hover{
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+#cuadrotarjetas{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33% ;
+}
+
+
+
+/*----------TERJETSAS ---------*/
+.tarjeta2{
+    width: 300px;
+    height: 300px;
+    margin: 5%;
+}
+
+
+
+
+
+
 /* -------------------HEADER------------------*/
 
 
