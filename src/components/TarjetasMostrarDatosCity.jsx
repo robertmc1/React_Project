@@ -1,6 +1,6 @@
 import  React, {Component} from 'react';
 import FormularioAddCity from "./FormularioAddCity";
-import {cities}  from './cities.json'
+import {cities}  from './data/cities.json'
 
 class TarjetasMostrarDatosCity extends Component{
     constructor(){

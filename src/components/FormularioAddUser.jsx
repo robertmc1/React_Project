@@ -1,4 +1,5 @@
 import  React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 class FormularioAddUser extends Component {
     constructor() {
@@ -9,7 +10,7 @@ class FormularioAddUser extends Component {
             mail:'',
             phone:'',
             headquorter:'',
-            role:''
+            roleId:''
         };
     }
 
@@ -18,12 +19,22 @@ class FormularioAddUser extends Component {
         this.setState({
             [name]: value
         });
-    }
+    };
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.onAddUser(this.state);
-    }
+
+        const USER = this.state;
+
+        this.addUserHandle(USER)
+    };
+
+    addUserHandle = (USER) => {
+        this.props.onAddUser(USER);
+    };
+
+
+
 
 render() {
 
@@ -109,16 +120,20 @@ render() {
                             </div>
                             <div id="divForm">
                                 <p id="textoGrande"> Role</p>
-                                <label htmlFor="Rol">Role:</label>
+                                <label htmlFor="Role">Role:</label>
                                 <select
-                                    name="role"
+                                    name="roleId"
                                     onChange={this.handleInput}>
                                     <option>Fouter</option>
                                     <option>XXXXX</option>
                                     <option>YYYYY</option>
                                 </select>
                             </div>
-                            <button href="" className="boton_1" type="submit">Aceptar</button>
+                            <button href=""
+                                    className="boton_1"
+                                    type="submit">Aceptar</button>
+
+
                         </div>
                     </div>
                 </form>
@@ -126,4 +141,16 @@ render() {
         );
     }
 }
-export default FormularioAddUser;
+
+const mapDispatchToProps1 = (dispatch) => {
+    return{
+        onAddUser: (USER) => {
+            dispatch ({
+                type: 'ADD_USER',
+                data: USER
+            })
+        }
+    }
+};
+
+export default connect (null, mapDispatchToProps1)(FormularioAddUser);

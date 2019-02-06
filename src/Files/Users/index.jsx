@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import TablaMostrarDatosUser from "../../components/TablaMostrarDatosUser";
 
 const Users = (props) => {
@@ -10,4 +11,9 @@ const Users = (props) => {
     )
 };
 
-export default Users;
+
+export default connect( (state, props) => {
+    return {
+        user: state.user
+    }
+})(Users);
