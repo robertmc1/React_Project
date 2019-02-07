@@ -1,4 +1,6 @@
 import  React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {addCity} from "../redux/actions/citiesActions";
 
 class FormularioAddCity extends Component {
     constructor() {
@@ -19,11 +21,17 @@ class FormularioAddCity extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.onAddCity(this.state);
+        const CITY = this.state;
+
+        this.addCitiesHandle(CITY);
+    };
+
+    addCitiesHandle =(CITY) => {
+
+        this.props.onAddCity(CITY)
     };
 
     render() {
-
         return (
             <div>
                 <form  method="post"  onSubmit={this.handleSubmit}>
@@ -55,8 +63,6 @@ class FormularioAddCity extends Component {
                                         <option>YYYYY</option>
                                     </select>
                                 </div>
-
-
                             </div>
 
                             <div id="divForm">
@@ -76,7 +82,6 @@ class FormularioAddCity extends Component {
                                 <div>
                                     <label htmlFor="phone" id="textoGrande">Phone:</label>
                                 </div>
-
                                 <div>
                                     <input
                                         onChange={this.handleInput}
@@ -103,7 +108,12 @@ class FormularioAddCity extends Component {
                                 </select>
                             </div>
 
-                            <button href="" className="boton_1" type="submit">Aceptar</button>
+                            <button
+                                className="boton_1"
+                                type="submit"
+                            >
+                                Aceptar
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -112,4 +122,12 @@ class FormularioAddCity extends Component {
     }
 }
 
-export default FormularioAddCity;
+const mapDispatchToPropsCity = (dispatch) => {
+    return{
+        onAddCity: (CITY) =>{
+            dispatch (addCity(CITY));
+        }
+    };
+};
+
+export default connect (null, mapDispatchToPropsCity)(FormularioAddCity);

@@ -1,16 +1,16 @@
 import React from "react";
-
+import { connect } from 'react-redux';
 import TablaMostrarDatosCity from "../../components/TarjetasMostrarDatosCity"
 
-
-const Teams = (props) => {
+const Cities = (props) => {
     console.log(props);
-    return (
+    return(
         <div className={"display-in-box"}>
             <TablaMostrarDatosCity/>
-
         </div>
     );
 };
 
-export default Teams;
+export default connect ((state, props) => {
+    return {cities: state.cities}
+}) (Cities);

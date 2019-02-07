@@ -6,14 +6,11 @@ const Users = (props) => {
     console.log(props);
     return(
         <div>
-            <TablaMostrarDatosUser />
+            <TablaMostrarDatosUser/>
         </div>
-    )
+    );
 };
 
-
-export default connect( (state, props) => {
-    return {
-        user: state.user
-    }
-})(Users);
+export default connect ((state, props) => {
+    return {user: state.user}
+}) (Users);

@@ -1,6 +1,8 @@
 import  React, {Component} from 'react';
 import {connect} from 'react-redux';
 
+import {addUser} from '../redux/actions/userActions';
+
 class FormularioAddUser extends Component {
     constructor() {
         super();
@@ -23,7 +25,6 @@ class FormularioAddUser extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-
         const USER = this.state;
 
         this.addUserHandle(USER)
@@ -33,11 +34,7 @@ class FormularioAddUser extends Component {
         this.props.onAddUser(USER);
     };
 
-
-
-
-render() {
-
+    render() {
         return (
             <div>
                 <form  method="post"  onSubmit={this.handleSubmit}>
@@ -133,7 +130,6 @@ render() {
                                     className="boton_1"
                                     type="submit">Aceptar</button>
 
-
                         </div>
                     </div>
                 </form>
@@ -145,10 +141,7 @@ render() {
 const mapDispatchToProps1 = (dispatch) => {
     return{
         onAddUser: (USER) => {
-            dispatch ({
-                type: 'ADD_USER',
-                data: USER
-            })
+            dispatch (addUser(USER));
         }
     }
 };

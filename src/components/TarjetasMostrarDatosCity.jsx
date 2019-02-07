@@ -1,40 +1,29 @@
 import  React, {Component} from 'react';
+import {connect} from 'react-redux';
 import FormularioAddCity from "./FormularioAddCity";
-import {cities}  from './data/cities.json'
 
 class TarjetasMostrarDatosCity extends Component{
-    constructor(){
-        super();
-        this.state = {
-            cities
-        }
-    }
 
-    handleAddCity = (city) => {
-        this.setState({
-            cities:[...this.state.cities,city]
-        })
-    };
+    render(){
+        const {cities} = this.props.citiesR;
 
+        const mapCity = cities.map((item,i) => {
 
-
-    render() {
-        const cities = this.state.cities.map((cities,i) => {
             return(
                 <div className={"tarjeta"}>
                     <div className={"tarjeta-titulo"}>
-                        {cities.name}
+                        {item.name}
                     </div>
 
                     <div className={"tarjeta-dentro"}>
                         <div>
                             <div className={"boxi"}>
                                 <div className={"TitFont"}>Adress:</div>
-                                <div>{cities.address}</div>
+                                <div>{item.address}</div>
                             </div>
                             <div className={'inL'}>
                                 <div className={"TitFont"}>Phone:</div>
-                                <div>{cities.phone}</div>
+                                <div>{item.phone}</div>
                             </div>
                         </div>
 
@@ -53,25 +42,31 @@ class TarjetasMostrarDatosCity extends Component{
                                 </div>
                             </div>
                         </div>
-                        <button href="" className="boton_2" type="submit">View</button>
+                        <button
+                            href=""
+                            className="boton_2"
+                            type="submit">View</button>
                     </div>
 
                 </div>
             )
-        })
+        });
 
 
         return(
             <div >
                 <div id="cuadrotarjetas">
-                    {cities}
+                    {mapCity}
                 </div>
-
-                <FormularioAddCity onAddCity={this.handleAddCity}/>
+                <FormularioAddCity />
             </div>
         )
     }
 }
 
+const mapStateToProps = (state) => ({
+    citiesR: state
+});
 
-export default TarjetasMostrarDatosCity;
+export default connect(mapStateToProps, null)(TarjetasMostrarDatosCity);
+
