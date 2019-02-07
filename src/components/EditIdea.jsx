@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {user} from "./user"
+import {user} from "./data/user"
 
 class EditIdea extends Component {
     constructor(){

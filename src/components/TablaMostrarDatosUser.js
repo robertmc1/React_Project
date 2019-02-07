@@ -1,45 +1,33 @@
 import  React, {Component} from 'react';
-import {user} from './user.json';
+import {connect} from 'react-redux';
 import FormularioAddUser from './FormularioAddUser';
 
-
 class TablaMostrarDatosUser extends Component{
-    constructor(){
-        super();
-        this.state = {
-            user
-        };
-    }
-
-    handleAddUser = (users) => {
-        this.setState({
-            user:[...this.state.user,users]
-        })
-    }
-
-
 
     render(){
-        const user = this.state.user.map((user,i) => {
+        const {user} = this.props.userR;
+
+        const mapUsers = user.map((item,i) => {
+
             return(
                 <div className="card">
 
                     <div className="grid-container">
                         <div id="name">
-                            {user.name}
+                            {item.name}
                         </div>
 
                         <div id="surname">
-                            {user.surname}
+                           {item.surname}
                         </div>
 
                         <div id="role">
-                            {user.role}
+                            {item.roleId}
+                        </div>
+                        <div id="role">
+
                         </div>
 
-                        <div id="headquorter">
-                            {user.headquorter}
-                        </div>
                     </div>
 
                 </div>
@@ -51,7 +39,6 @@ class TablaMostrarDatosUser extends Component{
                 <div id='headTitle' >
                     Add user
                 </div>
-
                 <nav >
                     <div  className="grid-container-cabecera">
                         <div>
@@ -69,15 +56,24 @@ class TablaMostrarDatosUser extends Component{
                     </div>
                 </nav>
                 <div>
-                    {user}
+                    {mapUsers}
                 </div>
-
-                <FormularioAddUser onAddUser={this.handleAddUser}/>
-
+                <FormularioAddUser/>
             </div>
         )
     }
 }
 
 
-export default TablaMostrarDatosUser;
+
+const mapStateToProps = (state) => ({
+    userR: state
+});
+
+export default connect(mapStateToProps, null)(TablaMostrarDatosUser);
+
+// export default connect( (state, props) => {
+//     return {
+//         userR: state
+//     }
+// })(TablaMostrarDatosUser);
