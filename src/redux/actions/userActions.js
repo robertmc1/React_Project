@@ -1,12 +1,12 @@
+import uuid from 'uuid';
+import {actionTypes} from "../reducers/userReducer";
+
 
 export const addUser = (USER) => {
     return {
-        type: 'ADD_USER',
-<<<<<<< HEAD
-            data: USER
-=======
+        id: uuid(),
+        type: actionTypes.addUser,
         data: USER
->>>>>>> feature/redux
     }
 };
 

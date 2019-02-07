@@ -42,10 +42,19 @@ class TarjetasMostrarDatosCity extends Component{
                                 </div>
                             </div>
                         </div>
+
                         <button
-                            href=""
                             className="boton_2"
-                            type="submit">View</button>
+                            type="submit"
+                        >
+                            View
+                        </button>
+                        <button
+                            className="boton_2"
+                            type="submit"
+                        >
+                            Delete
+                        </button>
                     </div>
 
                 </div>
