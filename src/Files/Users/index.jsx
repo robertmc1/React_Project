@@ -11,6 +11,6 @@ const Users = (props) => {
     );
 };
 
-export default connect ((state, props) => {
+export default connect ((state) => {
     return {user: state.user}
 }) (Users);

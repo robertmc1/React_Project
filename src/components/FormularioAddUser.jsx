@@ -26,7 +26,6 @@ class FormularioAddUser extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         const USER = this.state;
-
         this.addUserHandle(USER)
     };
 

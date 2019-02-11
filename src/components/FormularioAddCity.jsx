@@ -27,9 +27,9 @@ class FormularioAddCity extends Component {
     };
 
     addCitiesHandle =(CITY) => {
-
         this.props.onAddCity(CITY)
     };
+
 
     render() {
         return (
@@ -114,6 +114,7 @@ class FormularioAddCity extends Component {
                             >
                                 Aceptar
                             </button>
+
                         </div>
                     </div>
                 </form>
@@ -124,9 +125,7 @@ class FormularioAddCity extends Component {
 
 const mapDispatchToPropsCity = (dispatch) => {
     return{
-        onAddCity: (CITY) =>{
-            dispatch (addCity(CITY));
-        }
+        onAddCity: (id) =>dispatch (addCity(id)),
     };
 };
 
