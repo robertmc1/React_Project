@@ -1,14 +1,12 @@
-
-
+@charset "UTF-8";
 /*------------- PRESENTACION EN DATOS TABLA -----------------*/
-
-#cuadrogeneral{
+#cuadrogeneral {
   margin-top: 50px;
   margin-right: 50px;
   margin-left: 50px;
 }
 
-#headTitle{
+#headTitle {
   background: #ff381a;
   padding: 10px;
   padding-left: 30px;
@@ -16,18 +14,18 @@
   font-size: 17px;
 }
 
-#headTitleBlue{
-    background: #3bd9e2;
-    padding: 10px;
-    padding-left: 30px;
-    color: #f7fcff;
+#headTitleBlue {
+  background: #3bd9e2;
+  padding: 10px;
+  padding-left: 30px;
+  color: #f7fcff;
 }
 
-.card{
+.card {
   border: 1.2px rgba(93, 97, 90, 0.68) dashed;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 10px;
@@ -39,219 +37,251 @@
   font-size: 16px;
 }
 
-.grid-container-cabecera{
+.grid-container-cabecera {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 10px;
   padding: 10px;
   background: gray;
 }
+
 .grid-container-cabecera > div {
-    display: grid;
-    text-align: center;
-    font-size: 16px;
+  display: grid;
+  text-align: center;
+  font-size: 16px;
 }
 
 /*----------------FORMULARIO-----------------*/
-
 form {
-    /* Sólo para centrar el formulario a la página */
-    margin-top: 5%;
-    margin-bottom:5%;
-    width: auto;
-    /* Para ver el borde del formulario */
-    border: 1px solid rgba(158, 163, 158, 0.6);
-}
-#paddingForm{
-    padding: 40px;
-    padding-top: 20px;
+  /* Sólo para centrar el formulario a la página */
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: auto;
+  /* Para ver el borde del formulario */
+  border: 1px solid rgba(158, 163, 158, 0.6);
 }
 
-input{
-    width: 60%;
-    border: none;
-    border-bottom: 1px solid #E24A29;
+#paddingForm {
+  padding: 40px;
+  padding-top: 20px;
 }
 
-select{
-    width: 60%;
-    border: none;
-    border-bottom: 1px solid #E24A29;
+input {
+  width: 60%;
+  border: none;
+  border-bottom: 1px solid #E24A29;
 }
 
-.grid-container-form{
-    display: grid;
-    grid-template-columns: 50% 50%;
+select {
+  width: 60%;
+  border: none;
+  border-bottom: 1px solid #E24A29;
+}
+
+.grid-container-form {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .grid-container-form > div {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-#textoGrande{
-    color: #ff381a;
-    font-size: 25px;
-    font-family: fsans-serif;
-    font-weight: bold;
-    margin-bottom: 0px;
-    margin-top: 10px;
+#textoGrande {
+  color: #ff381a;
+  font-size: 25px;
+  font-family: fsans-serif;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
-.boton_1{
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    float: right;
-    margin-top: 12%;
-}
-.boton_1:hover{
-    opacity: 0.6;
-    text-decoration: none;
+.boton_1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  float: right;
+  margin-top: 12%;
 }
 
-select{
-    margin:8px;
+.boton_1:hover {
+  opacity: 0.6;
+  text-decoration: none;
 }
 
+select {
+  margin: 8px;
+}
 
 /* -------------------VALIDACION DE FORMULARTIO------------------*/
-
-
 input:valid {
-    border: none;
-    border-bottom: 1px solid #3bd9e2;
+  border: none;
+  border-bottom: 1px solid #3bd9e2;
 }
-
-
 
 /*----------------------TARJETAS City--------------------*/
-
-.tarjeta{
-    width: 300px;
-    height: 300px;
-    margin: 15%;
-    margin-right: 0px;
+.tarjeta {
+  width: 300px;
+  height: 300px;
+  margin: 15%;
+  margin-right: 0px;
 }
 
-.tarjeta-titulo{
-    background:#ff381a ;
-    padding: 3%;
-    color: #f9fffe;
-    text-align: center;
+.tarjeta-titulo {
+  background: #ff381a;
+  padding: 3%;
+  color: #f9fffe;
+  text-align: center;
 }
 
-.tarjeta-dentro{
-    padding: 4%;
-    border: 2px #ff381a  solid;
-    border-top: none;
-    width: 300px;
-    height: 300px;
+.tarjeta-dentro {
+  padding: 4%;
+  border: 2px #ff381a solid;
+  border-top: none;
+  width: 300px;
+  height: 300px;
 }
 
-.titulo{
-    color: #ff381a;
-    font-size: larger;
-    padding-left:1.5%;
-    margin: 3%;
+.titulo {
+  color: #ff381a;
+  font-size: larger;
+  padding-left: 1.5%;
+  margin: 3%;
 }
 
-#division-tj{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    padding-left: 4%;
+#division-tj {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding-left: 4%;
 }
 
-.inL{
-    display: grid;
-    grid-template-columns: 40% 60%;
+.inL {
+  display: grid;
+  grid-template-columns: 40% 60%;
 }
 
-.TitFont{
-    color: #ff381a;
+.TitFont {
+  color: #ff381a;
 }
 
-.boxi{
-    margin-bottom: 3%;
+.boxi {
+  margin-bottom: 3%;
 }
 
-.boton_2{
-    background-color: #42acaf;
-    color: white;
-    padding: 10px 10px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    float: right;
-    margin-top: 15%;
-}
-.boton_2:hover{
-    opacity: 0.6;
-    text-decoration: none;
+.boton_2 {
+  background-color: #42acaf;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  float: right;
+  margin-top: 15%;
 }
 
-#cuadrotarjetas{
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33% ;
+.boton_2:hover {
+  opacity: 0.6;
+  text-decoration: none;
 }
 
-
+#cuadrotarjetas {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
 
 /*----------TERJETSAS ---------*/
-.tarjeta2{
-    width: 300px;
-    height: 300px;
-    margin: 5%;
+.container {
+  min-height: 60%;
+  max-height: 60%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-
-
-
-
+.tarjetas {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #ff381a;
+  margin: 30px;
+}
+.tarjetas .tituloTarjeta {
+  background-color: #ff381a;
+  padding: 9px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+.tarjetas .divTj {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 10px;
+}
+.tarjetas .divTj div {
+  padding: 1px;
+}
+.tarjetas .divTitle {
+  color: #ff381a;
+  padding-left: 24px;
+  font-weight: bold;
+}
+.tarjetas button {
+  background-color: #42acaf;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  float: right;
+  margin: 30px;
+}
+.tarjetas button:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
 
 /* -------------------HEADER------------------*/
-
-
 #header {
-    list-style-type: none;
-    margin: 0;
-    padding: 0.5%;
-    padding-right: 3%;
-    overflow: hidden;
-    background: #ff381a;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5%;
+  padding-right: 3%;
+  overflow: hidden;
+  background: #ff381a;
 }
 
-#demiumTitle{
-    float:Left;
-    font-family: "Lucida Bright";
-    font-size: 25px;
-    color: white;
-    margin: 1%;
+#demiumTitle {
+  float: Left;
+  font-family: "Lucida Bright";
+  font-size: 25px;
+  color: white;
+  margin: 1%;
 }
 
 #header a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
 }
 
 .botonesMenu {
-    float: right;
+  float: right;
 }
-
 
 /*---------------------FOOTER---------------------*/
-
-.footer{
-    position: absolute;
-    height: 85px;
-    width: 100%;
-    background: #ff381a;
-    padding: 31px;
-    font-family: "Lucida Bright";
-    font-size: 15px;
-    color: white;
+.footer {
+  position: absolute;
+  height: 85px;
+  width: 100%;
+  background: #ff381a;
+  padding: 31px;
+  font-family: "Lucida Bright";
+  font-size: 15px;
+  color: white;
 }
+
+/*# sourceMappingURL=App.css.map */

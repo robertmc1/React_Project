@@ -12,7 +12,7 @@ import Error404 from '../Files/Error404';
 
 import 'normalize.css/normalize.css'
 
-import '../App.css';
+import '../App.scss';
 
 
 
