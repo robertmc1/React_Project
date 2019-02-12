@@ -42,7 +42,7 @@ class Tarjetas extends Component {
                     <div className={"divTitle"}>
                         Demium teams
                     </div>
-                    <button href="" className="boton_3" type="submit">View</button>y
+                    <button href="" className="boton_3" type="submit">View</button>
 
                     <div className={"divTj"}>
                         <div>
