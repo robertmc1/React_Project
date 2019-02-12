@@ -10,7 +10,7 @@ class TarjetasMostrarDatosCity extends Component{
         const mapCity = cities.map((item,i) => {
 
             return(
-                <div className={"tarjeta"}>
+                <div className={"tarjeta"}  key={item.id} id={item.id}>
                     <div className={"tarjeta-titulo"}>
                         {item.name}
                     </div>
