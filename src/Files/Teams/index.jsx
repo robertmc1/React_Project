@@ -4,7 +4,14 @@ import Tarjetas from "../../components/Tarjetas";
 const Teams = (props) => {
     console.log(props);
     return (
-        <div className={"display-in-box"}>
+        <div className={"container"} >
+            <Tarjetas/>
+            <Tarjetas/>
+            <Tarjetas/>
+            <Tarjetas/>
+            <Tarjetas/>
+            <Tarjetas/>
+            <Tarjetas/>
             <Tarjetas/>
         </div>
     );

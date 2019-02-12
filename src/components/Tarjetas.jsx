@@ -1,17 +1,18 @@
 import  React, {Component} from 'react';
 
+
+
+
 class Tarjetas extends Component {
 
     render() {
         return(
-            <div className={"tarjeta2"}>
-                <div className={"tarjeta-titulo"}>
-                    REAL UNICORN
-                    <button href="" className="boton_2" type="submit">View</button>
-                </div>
-
-                <div className={"tarjeta-dentro"}>
-                    <div id={"division-tj"}>
+            <div>
+                <div className={"tarjetas"}>
+                    <div className={"tituloTarjeta"}>
+                        REAL UNICORN
+                    </div>
+                    <div className={"divTj"} >
                         <div>
                             <div>Idea:</div>
                             <div>City:</div>
@@ -22,10 +23,10 @@ class Tarjetas extends Component {
                         </div>
                     </div>
 
-                    <div className={"titulo"}>
+                    <div className={"divTitle"}>
                         Team members
                     </div>
-                    <div id={"division-tj"}>
+                    <div className={"divTj"}>
                         <div>
                             <div>CEO</div>
                             <div>CTO</div>
@@ -38,10 +39,12 @@ class Tarjetas extends Component {
                         </div>
 
                     </div>
-                    <div className={"titulo"}>
+                    <div className={"divTitle"}>
                         Demium teams
                     </div>
-                    <div id={"division-tj"}>
+                    <button href="" className="boton_3" type="submit">View</button>
+
+                    <div className={"divTj"}>
                         <div>
                             <div>PM</div>
                             <div>TM</div>
@@ -51,6 +54,7 @@ class Tarjetas extends Component {
                             <div>Pepita Perez</div>
                         </div>
                     </div>
+
 
                 </div>
 
