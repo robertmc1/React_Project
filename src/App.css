@@ -217,7 +217,7 @@ input:valid {
 }
 .tarjetas .divTj {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 25% 65% 10%;
   padding: 10px;
 }
 .tarjetas .divTj div {
@@ -236,7 +236,6 @@ input:valid {
   border-radius: 2px;
   cursor: pointer;
   float: right;
-  margin: 30px;
 }
 .tarjetas button:hover {
   opacity: 0.6;

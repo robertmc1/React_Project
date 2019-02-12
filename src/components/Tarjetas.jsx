@@ -1,8 +1,5 @@
 import  React, {Component} from 'react';
 
-
-
-
 class Tarjetas extends Component {
 
     render() {
@@ -37,13 +34,10 @@ class Tarjetas extends Component {
                             <div>Baby Murphy</div>
                             <div>Cliffi Hapiki</div>
                         </div>
-
                     </div>
                     <div className={"divTitle"}>
                         Demium teams
                     </div>
-                    <button href="" className="boton_3" type="submit">View</button>
-
                     <div className={"divTj"}>
                         <div>
                             <div>PM</div>
@@ -53,14 +47,13 @@ class Tarjetas extends Component {
                             <div>Pepito Perez</div>
                             <div>Pepita Perez</div>
                         </div>
+                        <div>
+                            <button href="" className="boton_3" type="submit">View</button>
+                        </div>
                     </div>
-
-
                 </div>
-
             </div>
         )
-
     };
 }
 

@@ -1,5 +1,4 @@
 
-
 /*------------- PRESENTACION EN DATOS TABLA -----------------*/
 
 #cuadrogeneral{
@@ -198,10 +197,7 @@ input:valid {
 }
 
 
-
 /*----------TERJETSAS ---------*/
-
-
 
 .container{
     min-height: 60%;
@@ -227,7 +223,7 @@ input:valid {
     }
     .divTj{
         display: grid;
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 25% 65% 10%;
         padding: 10px;
         div{
             padding: 1px;
@@ -246,14 +242,12 @@ input:valid {
         border-radius: 2px;
         cursor: pointer;
         float: right;
-        margin: 30px;
     }
     button:hover{
         opacity: 0.6;
         text-decoration: none;
     }
 }
-
 
 
 
