@@ -1,12 +1,15 @@
 import  React from 'react';
 import {connect} from 'react-redux';
 import FormularioAddCity from "./FormularioAddCity";
+import {deleteCity} from "../redux/actions/citiesActions";
+import { getTodoById } from '../redux/filters/citiesFilters';
+
 
 const TarjetasMostrarDatosCity = (props) =>{
 
         const {cities} = props.citiesR;
 
-        const mapCity = cities.map((item,i) => {
+        const mapCity = cities.map((item) => {
 
             return(
                 <div className={"tarjeta"}  key={item.id} id={item.id}>
@@ -41,10 +44,21 @@ const TarjetasMostrarDatosCity = (props) =>{
                                 </div>
                             </div>
                         </div>
+
                         <button
-                            href=""
                             className="boton_2"
-                            type="submit">View</button>
+                            type="submit"
+                        >
+                            View
+                        </button>
+                        <button
+                            onClick={() => this.props.deleteCity(props.id)}
+                            className="boton_3"
+                            type="submit"
+                        >
+                            Borrar
+                        </button>
+
                     </div>
 
                 </div>
@@ -65,5 +79,13 @@ const mapStateToProps = (state) => ({
     citiesR: state
 });
 
-export default connect(mapStateToProps, null)(TarjetasMostrarDatosCity);
+const mapDispatchToPropsCity = (dispatch) => {
+    return {
+        deleteCity: (id) => {
+            dispatch(deleteCity(id))
+        }
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToPropsCity)(TarjetasMostrarDatosCity);
 
