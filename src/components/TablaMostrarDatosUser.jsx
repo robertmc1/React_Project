@@ -1,24 +1,22 @@
-import  React, {Component} from 'react';
+import  React from 'react';
 import {connect} from 'react-redux';
 import FormularioAddUser from './FormularioAddUser';
 
-class TablaMostrarDatosUser extends Component{
+const TablaMostrarDatosUser = (props) =>{
 
-    render(){
-        const {user} = this.props.userR;
+        const {user} = props.userR;
 
         const mapUsers = user.map((item,i) => {
-
             return(
-                <div className="card">
+                <div className="card" key={item.id} id={item.id}>
 
-                    <div className="grid-container">
+                    <div className="grid-container" >
                         <div id="name">
                             {item.name}
                         </div>
 
                         <div id="surname">
-                           {item.surname}
+                            {item.surname}
                         </div>
 
                         <div id="role">
@@ -29,7 +27,6 @@ class TablaMostrarDatosUser extends Component{
                         </div>
 
                     </div>
-
                 </div>
             )
         });
@@ -61,8 +58,7 @@ class TablaMostrarDatosUser extends Component{
                 <FormularioAddUser/>
             </div>
         )
-    }
-}
+};
 
 
 

@@ -1,16 +1,15 @@
-import  React, {Component} from 'react';
+import  React from 'react';
 import {connect} from 'react-redux';
 import FormularioAddCity from "./FormularioAddCity";
 
-class TarjetasMostrarDatosCity extends Component{
+const TarjetasMostrarDatosCity = (props) =>{
 
-    render(){
-        const {cities} = this.props.citiesR;
+        const {cities} = props.citiesR;
 
         const mapCity = cities.map((item,i) => {
 
             return(
-                <div className={"tarjeta"}>
+                <div className={"tarjeta"}  key={item.id} id={item.id}>
                     <div className={"tarjeta-titulo"}>
                         {item.name}
                     </div>
@@ -52,7 +51,6 @@ class TarjetasMostrarDatosCity extends Component{
             )
         });
 
-
         return(
             <div >
                 <div id="cuadrotarjetas">
@@ -61,8 +59,7 @@ class TarjetasMostrarDatosCity extends Component{
                 <FormularioAddCity />
             </div>
         )
-    }
-}
+};
 
 const mapStateToProps = (state) => ({
     citiesR: state
