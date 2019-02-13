@@ -1,11 +1,10 @@
-import  React, {Component} from 'react';
+import  React from 'react';
 import {connect} from 'react-redux';
 import FormularioAddUser from './FormularioAddUser';
 
-class TablaMostrarDatosUser extends Component{
+const TablaMostrarDatosUser = (props) =>{
 
-    render(){
-        const {user} = this.props.userR;
+        const {user} = props.userR;
 
         const mapUsers = user.map((item,i) => {
             return(
@@ -28,7 +27,6 @@ class TablaMostrarDatosUser extends Component{
                         </div>
 
                     </div>
-
                 </div>
             )
         });
@@ -60,8 +58,7 @@ class TablaMostrarDatosUser extends Component{
                 <FormularioAddUser/>
             </div>
         )
-    }
-}
+};
 
 
 
