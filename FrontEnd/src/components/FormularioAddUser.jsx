@@ -104,8 +104,8 @@ class FormularioAddUser extends Component {
 
                         <div id="divFormRight">
                             <div id="divForm" >
-                                <p id="textoGrande"><b> Headquarter</b></p>
-                                <label htmlFor="Headquorter">Headquarter:</label>
+                                <p id="textoGrande"><b> Headquorter</b></p>
+                                <label htmlFor="Headquorter">Headquorter:</label>
                                 <select
                                     name="headquorter"
                                     onChange={this.handleInput}>

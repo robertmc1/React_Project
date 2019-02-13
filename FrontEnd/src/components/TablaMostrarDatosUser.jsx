@@ -48,7 +48,7 @@ const TablaMostrarDatosUser = (props) =>{
                             Role
                         </div>
                         <div>
-                            Headquarter
+                            Headquorter
                         </div>
                     </div>
                 </nav>
