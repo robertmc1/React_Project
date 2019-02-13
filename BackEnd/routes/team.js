@@ -1,10 +1,10 @@
-const route = require('express').Router();
+const router = require('express').Router();
 
 
 
-app.get('/', (req,res) => res.json({code: 200, respones: 'get Teams'}));
-app.post('/', (req,res) => res.json({code: 200, respones: 'post Teams'}));
-app.put('/', (req,res) => res.json({code: 200, respones: 'put Teams'}));
-app.delete('/', (req,res) => res.json({code: 200, respones: 'delete Teams'}));
+router.get('/', (req,res) => res.json({code: 200, response: 'get Teams'}));
+router.post('/', (req,res) => res.json({code: 200, response: 'post Teams'}));
+router.put('/', (req,res) => res.json({code: 200, response: 'put Teams'}));
+router.delete('/', (req,res) => res.json({code: 200, response: 'delete Teams'}));
 
 module.exports = router;
