@@ -97,7 +97,7 @@ class FormularioAddCity extends Component {
                         <div id="divFormRight">
                             <div id="divForm" >
                                 <p id="textoGrande"><b> Demium team</b></p>
-                                <label htmlFor="Headquorter">Team:</label>
+                                <label htmlFor="Headquarter">Team:</label>
                                 <select
                                     name="team"
                                     onChange={this.handleInput}>
