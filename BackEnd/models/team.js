@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const UserSchema = require('./user');
 
-const RoleSchema = mongoose.Schema({
+const TeamSchema = mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -11,15 +12,16 @@ const RoleSchema = mongoose.Schema({
         validate: {
             isAsync: true,
             validator: (name) => Boolean(name.match(/^[A-Za-z]+[ ]?[A-Za-z]+$/)),
-            message: '{VALUE} is not a valid role, only characters (A-Z, a-z)'
+            message: '{VALUE} is not a valid User, only characters (A-Z, a-z)'
         }
     },
-    isDemium: {
-        type: Boolean,
+    cityId: {
+        type: String,
         required: true
-    }
+    },
+    users: [UserSchema]
 }, { strict: true });
 
-const RoleModel = mongoose.model('role', RoleSchema);
 
-module.exports = RoleModel;
+
+module.exports = mongoose.model('role', TeamSchema);
