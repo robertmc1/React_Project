@@ -23,13 +23,13 @@ const AppRouter = () => {
                     <Header />
                     <Switch>
                         <Route path="/cities" component={Cities} exact/>
-                        <Route path="/ideas" component={Ideas} exact/>
                         <Route path="/teams" component={Teams} exact/>
+                        <Route path="/ideas" component={Ideas} exact/>
                         <Route path="/users" component={Users} exact/>
                         {/*<Route path={'/:lang(es|en|pt)/product/:product_id'} component={Product} exact />*/}
                         {/*<Route path="*" component={Error404} exact/>*/}
                         <Route path="/404" component={Error404} exact/>
-                        <Redirect to={'/404'}/>
+                        <Redirect to={"/teams"}/>
                     </Switch>
                     <Footer />
                 </div>
