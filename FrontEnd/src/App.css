@@ -273,8 +273,6 @@ input:valid {
 
 /*---------------------FOOTER---------------------*/
 .footer {
-  position: absolute;
-  width: 100%;
   background: #ff381a;
   padding: 31px;
   font-family: "Lucida Bright";

@@ -8,6 +8,7 @@ class FormularioAddCity extends Component {
         super();
         this.state = {
             id: "",
+            name:"",
             address: '',
             phone:'',
             team:'',
@@ -32,11 +33,11 @@ class FormularioAddCity extends Component {
         this.props.onAddCity(CITY)
     };
 
-
     render() {
+
         return (
             <div>
-                <form  method="post"  onSubmit={this.handleSubmit}>
+                <form id="myForm" method="post"  onSubmit={this.handleSubmit}>
                     <div id='headTitleBlue' >
                         Add city
                     </div>
@@ -49,20 +50,23 @@ class FormularioAddCity extends Component {
                                     <label htmlFor="country">Country:</label>
                                     <select
                                         name="country"
+                                        required
                                         onChange={this.handleInput}>
+                                        <option  value={""} >Selecciona una opción</option>
                                         <option>Spain</option>
-                                        <option>XXXXX</option>
-                                        <option>YYYYY</option>
                                     </select>
                                 </div>
                                 <div>
                                     <label htmlFor="name">City:</label>
                                     <select
                                         name="name"
-                                        onChange={this.handleInput}>
+                                        required
+                                        onChange={this.handleInput}
+                                    >
+                                        <option value={""}>Selecciona una opción</option>
                                         <option>Madrid</option>
-                                        <option>XXXXX</option>
-                                        <option>YYYYY</option>
+                                        <option>XXXXXX</option>
+                                        <option>YYYYYY</option>
                                     </select>
                                 </div>
                             </div>
@@ -75,8 +79,10 @@ class FormularioAddCity extends Component {
                                     <input
                                         onChange={this.handleInput}
                                         type="text"
+                                        minLength={10}
                                         name="address"
                                         placeholder="Adress"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -87,10 +93,12 @@ class FormularioAddCity extends Component {
                                 <div>
                                     <input
                                         onChange={this.handleInput}
-                                        type="text"
+                                        type="tel"
                                         name="phone"
+                                        minLength={9}
+                                        maxLength={16}
                                         placeholder="Phone number"
-
+                                        required
                                     />
                                 </div>
                             </div>
@@ -102,8 +110,10 @@ class FormularioAddCity extends Component {
                                 <label htmlFor="Headquorter">Team:</label>
                                 <select
                                     name="team"
-                                    onChange={this.handleInput}>
-                                    <option>Select team</option>
+                                    onChange={this.handleInput}
+                                    required
+                                >
+                                    <option value={""}>Selecciona una opción</option>
                                     <option>Unicorn 1</option>
                                     <option>Unicorn 2</option>
                                     <option>Unicorn 3</option>
@@ -112,6 +122,7 @@ class FormularioAddCity extends Component {
                             <button
                                 className="boton_1"
                                 type="submit"
+                                onClick={this.myFunction}
                             >
                                 Aceptar
                             </button>
