@@ -12,10 +12,9 @@ const cityReducer = (state = defaultState, action) => {
         case actionType.addCity:
             return [...state, action.data];
         case actionType.deleteCity:
-            state = this.state.filter ( item => {
-                return item.id !== action.data.id
-            });
-            return [...state];
+            return state.filter( item =>
+               item.id !== action.data.id
+            );
         default:
             return state;
     }

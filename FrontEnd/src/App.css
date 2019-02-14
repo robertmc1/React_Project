@@ -274,13 +274,13 @@ input:valid {
 /*---------------------FOOTER---------------------*/
 .footer {
   position: absolute;
-  height: 85px;
   width: 100%;
   background: #ff381a;
   padding: 31px;
   font-family: "Lucida Bright";
   font-size: 15px;
   color: white;
+  margin-top: 150px;
 }
 
 /*# sourceMappingURL=App.css.map */

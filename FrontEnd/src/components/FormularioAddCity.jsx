@@ -2,10 +2,12 @@ import  React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {addCity} from "../redux/actions/citiesActions";
 
+
 class FormularioAddCity extends Component {
     constructor() {
         super();
         this.state = {
+            id: "",
             address: '',
             phone:'',
             team:'',
@@ -107,14 +109,12 @@ class FormularioAddCity extends Component {
                                     <option>Unicorn 3</option>
                                 </select>
                             </div>
-
                             <button
                                 className="boton_1"
                                 type="submit"
                             >
                                 Aceptar
                             </button>
-
                         </div>
                     </div>
                 </form>
@@ -125,8 +125,10 @@ class FormularioAddCity extends Component {
 
 const mapDispatchToPropsCity = (dispatch) => {
     return{
-        onAddCity: (id) =>dispatch (addCity(id)),
-    };
+        onAddCity: (CITY) => {
+            dispatch (addCity(CITY));
+        }
+    }
 };
 
 export default connect (null, mapDispatchToPropsCity)(FormularioAddCity);
