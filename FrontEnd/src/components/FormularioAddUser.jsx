@@ -10,7 +10,7 @@ class FormularioAddUser extends Component {
             surname:'',
             mail:'',
             phone:'',
-            headquorter:'',
+            headquarter:'',
             roleId:''
         };
     }
@@ -52,6 +52,9 @@ class FormularioAddUser extends Component {
                                         type="text"
                                         name="name"
                                         placeholder="First Name"
+                                        minLength={2}
+                                        maxLength={20}
+                                        required
                                     />
                                 </div>
                             </div>
@@ -65,6 +68,9 @@ class FormularioAddUser extends Component {
                                         type="text"
                                         name="surname"
                                         placeholder="Last name"
+                                        minLength={2}
+                                        maxLength={20}
+                                        required
                                     />
                                 </div>
                             </div>
@@ -75,11 +81,10 @@ class FormularioAddUser extends Component {
                                 <div>
                                     <input
                                         onChange={this.handleInput}
-                                        type="text/javascript"
+                                        type="email"
                                         name="mail"
                                         placeholder="Email"
                                         required
-
                                     />
 
                                 </div>
@@ -92,10 +97,12 @@ class FormularioAddUser extends Component {
                                 <div>
                                     <input
                                         onChange={this.handleInput}
-                                        type="text"
+                                        type="tel"
                                         name="phone"
                                         placeholder="Phone number"
-
+                                        minLength={9}
+                                        maxLength={20}
+                                        required
                                     />
                                 </div>
                             </div>
@@ -107,7 +114,10 @@ class FormularioAddUser extends Component {
                                 <label htmlFor="Headquarter">Headquarter:</label>
                                 <select
                                     name="headquarter"
-                                    onChange={this.handleInput}>
+                                    required
+                                    onChange={this.handleInput}
+                                >
+                                    <option value={""}>Selecciona una opción</option>
                                     <option>Australia</option>
                                     <option>Canada</option>
                                     <option>USA</option>
@@ -118,10 +128,13 @@ class FormularioAddUser extends Component {
                                 <label htmlFor="Role">Role:</label>
                                 <select
                                     name="roleId"
-                                    onChange={this.handleInput}>
-                                    <option>Fouter</option>
-                                    <option>Fouter2</option>
-                                    <option>Fouter3</option>
+                                    required
+                                    onChange={this.handleInput}
+                                >
+                                    <option value={""}>Selecciona una opción</option>
+                                    <option>Fouter 1</option>
+                                    <option>Fouter 2</option>
+                                    <option>Fouter 3</option>
                                 </select>
                             </div>
                             <button href=""

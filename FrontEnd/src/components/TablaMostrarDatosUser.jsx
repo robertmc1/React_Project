@@ -23,7 +23,7 @@ const TablaMostrarDatosUser = (props) =>{
                             {item.roleId}
                         </div>
                         <div id="role">
-
+                            {item.headquarter}
                         </div>
 
                     </div>
