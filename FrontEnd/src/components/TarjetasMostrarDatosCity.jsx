@@ -51,7 +51,7 @@ const TarjetasMostrarDatosCity = (props) =>{
                             View
                         </button>
                         <button
-                            onClick={() => this.props.deleteCity(props.id)}
+                            onClick={() => props.deleteCity(props.id)}
                             className="boton_3"
                             type="submit"
                         >
@@ -74,11 +74,11 @@ const TarjetasMostrarDatosCity = (props) =>{
         )
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state, props) => ({
     citiesR: state
 });
 
-const mapDispatchToPropsCity = (dispatch) => {
+const mapDispatchToPropsCity = (dispatch, props) => {
     return {
         deleteCity: (id) => {
             dispatch(deleteCity(id))

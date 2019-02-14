@@ -121,8 +121,8 @@ class FormularioAddUser extends Component {
                                     name="roleId"
                                     onChange={this.handleInput}>
                                     <option>Fouter</option>
-                                    <option>XXXXX</option>
-                                    <option>YYYYY</option>
+                                    <option>Fouter2</option>
+                                    <option>Fouter3</option>
                                 </select>
                             </div>
                             <button href=""

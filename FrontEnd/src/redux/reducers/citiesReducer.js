@@ -1,4 +1,4 @@
-import cities from '../../components/data/cities';
+import cities from '../../components/data/cities.json';
 
 const defaultState = cities;
 
@@ -12,10 +12,10 @@ const cityReducer = (state = defaultState, action) => {
         case actionType.addCity:
             return [...state, action.data];
         case actionType.deleteCity:
-            this.state = this.state.filter ( item => {
+            state = this.state.filter ( item => {
                 return item.id !== action.data.id
             });
-            return {...state};
+            return [...state];
         default:
             return state;
     }
