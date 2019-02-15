@@ -8,13 +8,13 @@ class Header extends Component{
 
         return(
             <div>
-                <ul id={"header"}>
-                    <li className={"botonesMenu"}><NavLink activeClassName={'is-active'} to="/Users" exact>Users </NavLink></li>
-                    <li className={"botonesMenu"}><NavLink activeClassName={'is-active'} to="/Cities" exact>Cities </NavLink></li>
-                    <li className={"botonesMenu"}><NavLink activeClassName={'is-active'} to="/Ideas" exact>Ideas </NavLink></li>
-                    <li className={"botonesMenu"}><NavLink activeClassName={'is-active'} to="/Teams" exact>Teams </NavLink></li>
+                <nav id={"header"}>
                     <div id={"demiumTitle"}>Demium</div>
-                </ul>
+                    <div className={"botonesMenu"}><NavLink activeClassName={'is-active'} to="/Users" exact>Users </NavLink></div>
+                    <div className={"botonesMenu"}><NavLink activeClassName={'is-active'} to="/Cities" exact>Cities </NavLink></div>
+                    <div className={"botonesMenu"}><NavLink activeClassName={'is-active'} to="/Ideas" exact>Ideas </NavLink></div>
+                    <div className={"botonesMenu"}><NavLink activeClassName={'is-active'} to="/Teams" exact>Teams </NavLink></div>
+                </nav>
             </div>
 
         )

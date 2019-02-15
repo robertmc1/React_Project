@@ -51,7 +51,7 @@
   font-size: 16px;
 }
 
-/*----------------FORMULARIO-----------------*/
+/*----------------FORMULARIO-USER-----------------*/
 form {
   /* Sólo para centrar el formulario a la página */
   margin-top: 5%;
@@ -192,7 +192,7 @@ input:valid {
   grid-template-columns: 33.33% 33.33% 33.33%;
 }
 
-/*----------TERJETSAS ---------*/
+/*----------TERJETSAS TERAM---------*/
 .container {
   min-height: 60%;
   max-height: 60%;
@@ -242,6 +242,7 @@ input:valid {
   text-decoration: none;
 }
 
+/*-------------FORMULARIO TEAMS-----------------*/
 /* -------------------HEADER------------------*/
 #header {
   list-style-type: none;

@@ -1,18 +1,18 @@
 import React from "react";
-import Tarjetas from "../../components/Tarjetas";
+import TarjetasTeam from "../../components/TarjetasTeam";
 
 const Teams = (props) => {
     console.log(props);
     return (
         <div className={"container"} >
-            <Tarjetas/>
-            <Tarjetas/>
-            <Tarjetas/>
-            <Tarjetas/>
-            <Tarjetas/>
-            <Tarjetas/>
-            <Tarjetas/>
-            <Tarjetas/>
+            <TarjetasTeam/>
+            <TarjetasTeam/>
+            <TarjetasTeam/>
+            <TarjetasTeam/>
+            <TarjetasTeam/>
+            <TarjetasTeam/>
+            <TarjetasTeam/>
+            <TarjetasTeam/>
         </div>
     );
 };

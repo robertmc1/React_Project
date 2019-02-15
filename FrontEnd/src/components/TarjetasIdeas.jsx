@@ -1,13 +1,11 @@
-import  React, {Component} from 'react';
+import  React from 'react';
 
-class Tarjetas extends Component {
-
-    render() {
+const TarjetasTeam = (props) => {
         return(
             <div>
                 <div className={"tarjetas"}>
                     <div className={"tituloTarjeta"}>
-                        REAL UNICORN
+                         UNICORN SHOP
                     </div>
                     <div className={"divTj"} >
                         <div>
@@ -21,18 +19,13 @@ class Tarjetas extends Component {
                     </div>
 
                     <div className={"divTitle"}>
-                        Team members
+                        Description
                     </div>
-                    <div className={"divTj"}>
+                    <div >
                         <div>
-                            <div>CEO</div>
-                            <div>CTO</div>
-                            <div>CMO</div>
-                        </div>
-                        <div>
-                            <div>Julia Hartz</div>
-                            <div>Baby Murphy</div>
-                            <div>Cliffi Hapiki</div>
+                            <p>A computer program can easily produce gibberish - especially if it has been provided with
+                                garbage beforehand. This program does something a little different.
+                            </p>
                         </div>
                     </div>
                     <div className={"divTitle"}>
@@ -40,12 +33,12 @@ class Tarjetas extends Component {
                     </div>
                     <div className={"divTj"}>
                         <div>
-                            <div>PM</div>
-                            <div>TM</div>
+                            <div>Headquarter</div>
+                            <div>Team</div>
                         </div>
                         <div>
-                            <div>Pepito Perez</div>
-                            <div>Pepita Perez</div>
+                            <div>Madrid</div>
+                            <div>Real Unicorn</div>
                         </div>
                         <div>
                             <button href="" className="boton_3" type="submit">View</button>
@@ -54,7 +47,6 @@ class Tarjetas extends Component {
                 </div>
             </div>
         )
-    };
-}
+};
 
-export default Tarjetas;
+export default TarjetasTeam;
