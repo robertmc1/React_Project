@@ -4,16 +4,21 @@ import TarjetasTeam from "../../components/TarjetasTeam";
 const Teams = (props) => {
     console.log(props);
     return (
-        <div className={"container"} >
-            <TarjetasTeam/>
-            <TarjetasTeam/>
-            <TarjetasTeam/>
-            <TarjetasTeam/>
-            <TarjetasTeam/>
-            <TarjetasTeam/>
-            <TarjetasTeam/>
-            <TarjetasTeam/>
+        <div>
+            <div className={"container"} >
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+            </div>
+            <button href="" type="submit" className="boton_4"> + </button>
+
         </div>
+
     );
 };
 

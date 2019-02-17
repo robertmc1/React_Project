@@ -21,27 +21,25 @@ const TarjetasTeam = (props) => {
                     <div className={"divTitle"}>
                         Description
                     </div>
-                    <div >
-                        <div>
-                            <p>A computer program can easily produce gibberish - especially if it has been provided with
-                                garbage beforehand. This program does something a little different.
-                            </p>
-                        </div>
+                    <div className="divTjLine">
+                        <p>A computer program can easily produce gibberish - especially if it has been provided with
+                            garbage beforehand. This program does something a little different. rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr r rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+                            rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrrrrr
+                            rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+                        </p>
                     </div>
-                    <div className={"divTitle"}>
-                        Demium teams
-                    </div>
-                    <div className={"divTj"}>
-                        <div>
-                            <div>Headquarter</div>
-                            <div>Team</div>
+                    <div className="divTjLine">
+                        <div >
+                            <div className={"divTitle"}>Headquarter</div>
                         </div>
                         <div>
                             <div>Madrid</div>
-                            <div>Real Unicorn</div>
                         </div>
                         <div>
-                            <button href="" className="boton_3" type="submit">View</button>
+                            <div className={"divTitle"}>Team</div>
+                        </div>
+                        <div>
+                            <div>Real Unicorn</div>
                         </div>
                     </div>
                 </div>

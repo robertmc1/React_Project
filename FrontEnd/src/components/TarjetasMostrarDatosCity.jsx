@@ -17,12 +17,12 @@ const TarjetasMostrarDatosCity = (props) =>{
                     <div className={"tarjeta-titulo"}>
                         {item.name}
                     </div>
-                    <div>
-                        <div className={"boxi"}>
+                    <div className={"divTjLine"} >
+                        <div >
                             <div className={"TitFont"}>Adress:</div>
                             <div>{item.address}</div>
                         </div>
-                        <div className={'inL'}>
+                        <div >
                             <div className={"TitFont"}>Phone:</div>
                             <div>{item.phone}</div>
                         </div>
@@ -31,18 +31,17 @@ const TarjetasMostrarDatosCity = (props) =>{
                     <div className={"titulo"}>
                         Team members
                     </div>
-                    <div>
-                        <div >
-                            <div className={'inL'}>
-                                <div>Julia Hartz</div>
-                                <div>Role</div>
-                            </div>
-                            <div className={"inL"}>
-                                <div>Julia Hartz</div>
-                                <div>Role</div>
-                            </div>
+                    <div >
+                        <div className={'inL'}>
+                            <div>Julia Hartz</div>
+                            <div>Role</div>
+                        </div>
+                        <div className={"inL"}>
+                            <div>Julia Hartz</div>
+                            <div>Role</div>
                         </div>
                     </div>
+
                     <button
                         onClick={() => props.deleteCity(item.id)}
                         className="boton_2"

@@ -3,11 +3,11 @@ import TarjetasIdea from "../../components/TarjetasIdeas";
 
 const Ideas = (props) => {
     return (
-        <div>
+        <div  className={"container"}>
             <TarjetasIdea/>
         </div>
     );
-}
+};
 
 
 

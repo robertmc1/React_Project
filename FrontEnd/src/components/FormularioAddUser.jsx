@@ -86,14 +86,12 @@ class FormularioAddUser extends Component {
                                         placeholder="Email"
                                         required
                                     />
-
                                 </div>
                             </div>
                             <div id="divForm">
                                 <div>
                                     <label htmlFor="phone" id="textoGrande">Phone:</label>
                                 </div>
-
                                 <div>
                                     <input
                                         onChange={this.handleInput}
@@ -128,7 +126,6 @@ class FormularioAddUser extends Component {
                                 <label htmlFor="Role">Role:</label>
                                 <select
                                     name="roleId"
-                                    required
                                     onChange={this.handleInput}
                                 >
                                     <option value={""}>Selecciona una opción</option>

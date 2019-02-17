@@ -53,6 +53,6 @@ const TarjetasTeam = (props) => {
                 </div>
             </div>
         )
-}
+};
 
 export default TarjetasTeam;
