@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const UserSchema = require('./user');
 
-const IdeaSchema = mongoose.Schema({
+const CitySchema = mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -16,7 +16,7 @@ const IdeaSchema = mongoose.Schema({
             message: '{VALUE} is not a valid User, only characters (A-Z, a-z)'
         }
     },
-    description: {
+    address: {
         type: String,
         required: true,
         minlength: 10,
@@ -25,16 +25,25 @@ const IdeaSchema = mongoose.Schema({
         unique: false,
         validate: {
             isAsync: true,
-            validator: (description) => Boolean(true),
-            message: '{VALUE} is not a valid Description, only characters (A-Z, a-z)'
+            validator:  (address) => Boolean(name.match(/^[0-9A-Za-z \-,]+$/)),
+            message: '{VALUE} is not a valid User, only characters (A-Z, a-z)'
         }
     },
-    teamId: {
+    telephone: {
         type: String,
-        required: true
-    }
+        required: true,
+        minlength: 9,
+        maxlength: 15,
+        trim: true,
+        unique: true,
+        validate: {
+            isAsync: true,
+            validator: (telephone) => Boolean(true),
+            message: '{VALUE} is not a valid City, only characters (A-Z, a-z)'
+        }
+    },
 }, { strict: true });
 
 
-const IdeaModel = mongoose.model('user', IdeaSchema);
-module.exports = {IdeaSchema, IdeaModel};
+const CityModel = mongoose.model('user', CitySchema);
+module.exports = {CitySchema, CityModel};

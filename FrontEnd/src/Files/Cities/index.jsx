@@ -5,7 +5,7 @@ import TablaMostrarDatosCity from "../../components/TarjetasMostrarDatosCity"
 const Cities = (props) => {
     console.log(props);
     return(
-        <div className={"display-in-box"}>
+        <div className={"containerCity"}>
             <TablaMostrarDatosCity/>
         </div>
     );
