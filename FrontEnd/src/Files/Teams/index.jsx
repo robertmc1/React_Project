@@ -1,19 +1,29 @@
 import React from "react";
-import Tarjetas from "../../components/Tarjetas";
+import {Link} from 'react-router-dom';
+import TarjetasTeam from "../../components/TarjetasTeam";
+
+
+
 
 const Teams = (props) => {
     console.log(props);
     return (
-        <div className={"container"} >
-            <Tarjetas/>
-            <Tarjetas/>
-            <Tarjetas/>
-            <Tarjetas/>
-            <Tarjetas/>
-            <Tarjetas/>
-            <Tarjetas/>
-            <Tarjetas/>
+        <div>
+            <div className={"container"} >
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+                <TarjetasTeam/>
+            </div>
+            <Link to="/Teams/TeamsForm" className="boton_4" >+</Link>
+
+
         </div>
+
     );
 };
 

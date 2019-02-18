@@ -1,8 +1,7 @@
-import  React, {Component} from 'react';
+import  React from 'react';
 
-class Tarjetas extends Component {
+const TarjetasTeam = (props) => {
 
-    render() {
         return(
             <div>
                 <div className={"tarjetas"}>
@@ -48,13 +47,12 @@ class Tarjetas extends Component {
                             <div>Pepita Perez</div>
                         </div>
                         <div>
-                            <button href="" className="boton_3" type="submit">View</button>
+                            <button className="boton_3" type="submit">View</button>
                         </div>
                     </div>
                 </div>
             </div>
         )
-    };
-}
+};
 
-export default Tarjetas;
+export default TarjetasTeam;

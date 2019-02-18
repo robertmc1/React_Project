@@ -3,7 +3,7 @@ import user from '../../components/data/user';
 const defaultState = user;
 
 export const actionTypes = {
-    addUser: '@USER->ADD',
+    addUser: '@USER -> ADD',
 };
 
 const userReducer = (state = defaultState, action) => {
