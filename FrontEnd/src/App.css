@@ -317,15 +317,16 @@ input:valid {
   display: flex;
   flex-direction: row;
   margin-top: 8px;
+  flex-wrap: wrap;
 }
 .teamForm1 .body .divs .BMdiv select {
-  min-width: 255px;
+  min-width: 180px;
   max-width: 350px;
   border-bottom-color: #42acaf;
 }
 .teamForm1 .body .divs .BMdiv .subtitles3 {
   color: #ff381a;
-  font-weight: bold;
+  font-size: 15px;
   padding-left: 10px;
 }
 .teamForm1 .body .divs .BMdiv .subtitles3 div {
