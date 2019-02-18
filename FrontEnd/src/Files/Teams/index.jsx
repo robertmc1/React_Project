@@ -1,5 +1,9 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import TarjetasTeam from "../../components/TarjetasTeam";
+
+
+
 
 const Teams = (props) => {
     console.log(props);
@@ -15,7 +19,8 @@ const Teams = (props) => {
                 <TarjetasTeam/>
                 <TarjetasTeam/>
             </div>
-            <button href="" type="submit" className="boton_4"> + </button>
+            <Link to="/Teams/TeamsForm" className="boton_4" >+</Link>
+
 
         </div>
 

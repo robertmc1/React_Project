@@ -47,7 +47,7 @@ const TarjetasTeam = (props) => {
                             <div>Pepita Perez</div>
                         </div>
                         <div>
-                            <button href="" className="boton_3" type="submit">View</button>
+                            <button className="boton_3" type="submit">View</button>
                         </div>
                     </div>
                 </div>

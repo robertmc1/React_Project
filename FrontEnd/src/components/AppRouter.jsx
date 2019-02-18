@@ -6,6 +6,7 @@ import Footer from './Footer';
 
 import Cities from '../Files/Cities';
 import Ideas from '../Files/Ideas';
+import TeamsForm from '../Files/TeamsForm'
 import Teams from '../Files/Teams';
 import Users from '../Files/Users';
 import Error404 from '../Files/Error404';
@@ -25,6 +26,7 @@ const AppRouter = () => {
                         <Route path="/cities" component={Cities} exact/>
                         <Route path="/teams" component={Teams} exact/>
                         <Route path="/ideas" component={Ideas} exact/>
+                        <Route path="/teams/TeamsForm" component={TeamsForm} exact/>
                         <Route path="/users" component={Users} exact/>
                         {/*<Route path={'/:lang(es|en|pt)/product/:product_id'} component={Product} exact />*/}
                         {/*<Route path="*" component={Error404} exact/>*/}

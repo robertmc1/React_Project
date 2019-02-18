@@ -252,6 +252,8 @@ input:valid {
 
 /*-------------FORMULARIO TEAMS-----------------*/
 .boton_4 {
+  text-decoration: none;
+  text-align: center;
   background-color: #1faf5a;
   color: white;
   padding: 12px 12px;
@@ -261,9 +263,12 @@ input:valid {
   float: right;
   display: block;
   position: fixed;
-  width: 3%;
+  width: 20px;
   right: 20px;
   bottom: 10vh;
+}
+.boton_4:hover {
+  background-color: #af2122;
 }
 
 /* -------------------HEADER------------------*/
@@ -289,6 +294,11 @@ input:valid {
   color: white;
   text-align: center;
   padding: 14px 16px;
+}
+#header a:hover {
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10%;
 }
 
 .botonesMenu {
