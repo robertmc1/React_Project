@@ -252,6 +252,7 @@ input:valid {
         border-radius: 2px;
         cursor: pointer;
         float: right;
+
     }
     button:hover{
         opacity: 0.6;
@@ -259,7 +260,6 @@ input:valid {
     }
 }
 
-/*-------------FORMULARIO TEAMS-----------------*/
 
 .boton_4{
 
@@ -283,9 +283,117 @@ input:valid {
   &:hover {
     background-color: #af2122;
   }
-
 }
 
+/*-------------FORMULARIO TEAMS-----------------*/
+
+
+
+
+.teamForm1{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 5%;
+  margin-left: 5%;
+
+  form{
+    width: 80%;
+  }
+
+
+  .TFTitle{
+    background-color: #ff381a;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .body{
+    padding: 10px;
+
+
+    .divs{
+      margin-bottom: 10px;
+
+      input{
+        border-bottom-color: #42acaf;
+        max-width: 300px;
+      }
+
+      textarea{
+        min-width: 90%;
+        min-height: 13vh;
+        margin-top: 5px;
+        padding: 11px;
+        border: 1px solid #42acaf;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+      }
+
+      .subtitles{
+        color: #ff381a;
+        font-weight: bolder;
+        font-size: 18px;
+      }
+
+      .BMdiv{
+        display:flex;
+        flex-direction: row;
+        margin-top: 8px;
+
+        select{
+          min-width: 255px;
+          max-width: 350px;
+          border-bottom-color: #42acaf;
+        }
+
+        .subtitles3{
+          color: #ff381a;
+          font-weight: bold;
+          padding-left: 10px;
+
+          div{
+            padding-top: 6px;
+          }
+        }
+        .blockedInfo{
+          div{
+            padding-top: 6px;
+            margin-left: 15px;
+          }
+        }
+      }
+
+      .RedSubtitle{
+        color: white;
+        background: #ff381a;
+        padding: 5px;
+        text-align: center;
+        font-weight: bold;
+
+      }
+    }
+  }
+}
+
+.boton_FT{
+  background-color: #23c9ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  float: right;
+  margin: 20px;
+}
+.boton_FT:hover{
+  opacity: 0.6;
+  text-decoration: none;
+}
 
 
 /* -------------------HEADER------------------*/
@@ -306,6 +414,12 @@ input:valid {
     font-size: 25px;
     color: white;
     margin: 1%;
+
+  @media screen and (max-width: 440px) {
+    font-size: 15px;
+    margin-top: 15px;
+
+  }
 }
 
 #header a {

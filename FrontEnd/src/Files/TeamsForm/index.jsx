@@ -1,10 +1,10 @@
 import React from "react";
-import FormularioIdea from "../../components/FormularioIdea";
+import FormularioTeams from "../../components/FormularioTeams";
 
 const TeamsForm = (props) => {
     return (
         <div>
-             <FormularioIdea/>
+             <FormularioTeams/>
         </div>
 
     );
