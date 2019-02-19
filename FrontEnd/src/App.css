@@ -379,8 +379,10 @@ input:valid {
 }
 @media screen and (max-width: 440px) {
   #demiumTitle {
-    font-size: 15px;
-    margin-top: 15px;
+    margin-top: 13px;
+    font-size: 11px;
+    font-weight: bold;
+    transform: rotate(-45deg);
   }
 }
 
@@ -391,9 +393,8 @@ input:valid {
   padding: 14px 16px;
 }
 #header a:hover {
-  font-size: 18px;
-  font-weight: bold;
   border-radius: 10%;
+  border: 1px solid #f7fcff;
 }
 
 .botonesMenu {

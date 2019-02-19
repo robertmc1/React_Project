@@ -4,6 +4,7 @@ const defaultState = user;
 
 export const actionTypes = {
     addUser: '@USER -> ADD',
+    bulkCreate: '@User => BULK CREATE'
 };
 
 const userReducer = (state = defaultState, action) => {
