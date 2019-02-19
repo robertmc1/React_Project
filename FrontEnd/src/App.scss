@@ -344,16 +344,17 @@ input:valid {
         display:flex;
         flex-direction: row;
         margin-top: 8px;
+        flex-wrap: wrap;
 
         select{
-          min-width: 255px;
+          min-width: 180px;
           max-width: 350px;
           border-bottom-color: #42acaf;
         }
 
         .subtitles3{
           color: #ff381a;
-          font-weight: bold;
+          font-size: 15px;
           padding-left: 10px;
 
           div{
@@ -415,9 +416,14 @@ input:valid {
     color: white;
     margin: 1%;
 
+
   @media screen and (max-width: 440px) {
-    font-size: 15px;
-    margin-top: 15px;
+    margin-top: 13px;
+    font-size: 11px;
+    font-weight: bold;
+    transform: rotate(-45deg);
+
+
 
   }
 }
@@ -429,9 +435,8 @@ input:valid {
     padding: 14px 16px;
 
     &:hover {
-      font-size: 18px;
-      font-weight: bold;
       border-radius: 10%;
+      border: 1px solid #f7fcff;
     }
 }
 

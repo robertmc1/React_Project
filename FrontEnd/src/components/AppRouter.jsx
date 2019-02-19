@@ -7,6 +7,7 @@ import Footer from './Footer';
 import Cities from '../Files/Cities';
 import Ideas from '../Files/Ideas';
 import TeamsForm from '../Files/TeamsForm'
+import IdeasForm from '../Files/IdeasForm'
 import Teams from '../Files/Teams';
 import Users from '../Files/Users';
 import Error404 from '../Files/Error404';
@@ -23,15 +24,16 @@ const AppRouter = () => {
                 <div>
                     <Header />
                     <Switch>
-                        <Route path="/cities" component={Cities} exact/>
-                        <Route path="/teams" component={Teams} exact/>
-                        <Route path="/ideas" component={Ideas} exact/>
-                        <Route path="/teams/TeamsForm" component={TeamsForm} exact/>
-                        <Route path="/users" component={Users} exact/>
+                        <Route path="/Cities" component={Cities} exact/>
+                        <Route path="/Teams" component={Teams} exact/>
+                        <Route path="/Ideas" component={Ideas} exact/>
+                        <Route path="/Teams/TeamsForm" component={TeamsForm} exact/>
+                        <Route path="/Ideas/IdeasForm" component={IdeasForm} exact/>
+                        <Route path="/Users" component={Users} exact/>
                         {/*<Route path={'/:lang(es|en|pt)/product/:product_id'} component={Product} exact />*/}
                         {/*<Route path="*" component={Error404} exact/>*/}
                         <Route path="/404" component={Error404} exact/>
-                        <Redirect to={"/teams"}/>
+                        <Redirect to={"/Teams"}/>
                     </Switch>
                     <Footer />
                 </div>

@@ -62,7 +62,7 @@ const TablaMostrarDatosUser = (props) =>{
 
 
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state, props) => ({
     userR: state
 });
 
