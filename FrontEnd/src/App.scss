@@ -192,10 +192,7 @@ input:valid {
     text-decoration: none;
 }
 
-#cuadrotarjetas{
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33% ;
-}
+
 
 
 /*----------TERJETSAS TERAM---------*/
@@ -303,7 +300,6 @@ input:valid {
     width: 80%;
   }
 
-
   .TFTitle{
     background-color: #ff381a;
     color: white;
@@ -322,6 +318,10 @@ input:valid {
       input{
         border-bottom-color: #42acaf;
         max-width: 300px;
+      }
+
+      option:first-child {
+          background-color: rgba(95, 94, 92, 0.45);
       }
 
       textarea{
@@ -395,6 +395,7 @@ input:valid {
   opacity: 0.6;
   text-decoration: none;
 }
+
 
 
 /* -------------------HEADER------------------*/

@@ -37,7 +37,7 @@ const TarjetasMostrarDatosCity = (props) =>{
                             <div>Role</div>
                         </div>
                         <div className={"inL"}>
-                            <div>Julia Hartz</div>
+                            <div>Paco Pico Poco</div>
                             <div>Role</div>
                         </div>
                     </div>

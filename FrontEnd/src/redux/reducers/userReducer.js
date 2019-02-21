@@ -7,10 +7,11 @@ export const actionTypes = {
     bulkCreate: '@User => BULK CREATE'
 };
 
-const userReducer = (state = defaultState, action) => {
+const userReducer = (state = [], action) => {
     switch (action.type) {
         case actionTypes.addUser:
-            return [...state, action.data];
+            state = action.data;
+            return [...state];
         default:
             return state;
     }

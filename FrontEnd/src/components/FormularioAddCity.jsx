@@ -52,7 +52,7 @@ class FormularioAddCity extends Component {
                                         name="country"
                                         required
                                         onChange={this.handleInput}>
-                                        <option  value={""} >Selecciona una opción</option>
+                                        <option  selected="true" value={""} disabled>Selecciona una opción</option>
                                         <option>Spain</option>
                                     </select>
                                 </div>
@@ -63,7 +63,7 @@ class FormularioAddCity extends Component {
                                         required
                                         onChange={this.handleInput}
                                     >
-                                        <option value={""}>Selecciona una opción</option>
+                                        <option selected="true" value={""} disabled>Selecciona una opción</option>
                                         <option>Madrid</option>
                                         <option>XXXXXX</option>
                                         <option>YYYYYY</option>
@@ -111,7 +111,6 @@ class FormularioAddCity extends Component {
                                 <select
                                     name="team"
                                     onChange={this.handleInput}
-                                    required
                                 >
                                     <option value={""}>Selecciona una opción</option>
                                     <option>Unicorn 1</option>

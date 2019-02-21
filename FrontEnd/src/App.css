@@ -188,11 +188,6 @@ input:valid {
   text-decoration: none;
 }
 
-#cuadrotarjetas {
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-}
-
 /*----------TERJETSAS TERAM---------*/
 .container {
   min-height: 60%;
@@ -298,6 +293,9 @@ input:valid {
 .teamForm1 .body .divs input {
   border-bottom-color: #42acaf;
   max-width: 300px;
+}
+.teamForm1 .body .divs option:first-child {
+  background-color: rgba(95, 94, 92, 0.45);
 }
 .teamForm1 .body .divs textarea {
   min-width: 90%;
