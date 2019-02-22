@@ -14,18 +14,15 @@ const TablaMostrarDatosUser = (props) =>{
                         <div id="name">
                             {item.name}
                         </div>
-
                         <div id="surname">
                             {item.surname}
                         </div>
-
                         <div id="role">
                             {item.roleId}
                         </div>
                         <div id="role">
                             {item.headquarter}
                         </div>
-
                     </div>
                 </div>
             )

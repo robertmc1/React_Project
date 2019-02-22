@@ -1,6 +1,3 @@
-import user from '../../components/data/user';
-
-const defaultState = user;
 
 export const actionTypes = {
     addUser: '@USER -> ADD',
