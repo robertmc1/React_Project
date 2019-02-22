@@ -1,13 +1,10 @@
-import cities from '../../components/data/cities.json';
-
-const defaultState = cities;
 
 export const actionType = {
     addCity : '@CITY -> ADD',
-    deleteCity : '@CITY -> DELETE'
+    deleteCity : '@CITY -> BULK DELETE'
 };
 
-const cityReducer = (state = defaultState, action) => {
+const cityReducer = (state = [], action) => {
     switch (action.type) {
         case actionType.addCity:
             state = action.data;

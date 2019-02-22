@@ -31,6 +31,13 @@ axios.get('http://52.213.25.226:3030/city', config)
     })
     .catch(err => console.log('No ha funcionado users', err));
 
+axios.get('http://52.213.25.226:3030/idea', config)
+    .then(res => {
+        store.dispatch({type: '@IDEA -> ADD',
+            data: res.data.data})
+    })
+    .catch(err => console.log('No ha funcionado users', err));
+
 ReactDOM.render((
         <Provider store={store}>
             <AppRouter />

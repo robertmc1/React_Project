@@ -1,22 +1,39 @@
 import React, {Component} from "react";
+import {connect} from "react-redux";
+import {addIdea} from "../redux/actions/ideaAction";
 
 class FormularioIdeas extends Component {
     constructor(){
         super();
         this.state = {
-            ideaName:"",
-            bussinesMode:"",
-            description:"",
-            hedquorter:"",
-            teamName:"",
-            blockedDate:"",
-        }
+            name:"",
+            businessModelId: "",
+            description: "",
+            teamId: ""
+        };
     }
+
+    handleInput = (e) => {
+        const {value, name} = e.target;
+        this.setState({
+            [name]: value
+        });
+    };
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        const IDEA = this.state;
+        this.addCityHandle(IDEA)
+    };
+
+    addCityHandle = (IDEA) => {
+        this.props.onAddIdea(IDEA);
+    };
 
     render() {
         return (
             <div className={"teamForm1"}>
-                <form  method="post">
+                <form  method="post"  onSubmit={this.handleSubmit}>
                     <div className={"TFTitle"}>
                         Editar idea
                     </div>
@@ -28,7 +45,9 @@ class FormularioIdeas extends Component {
                             </div>
                             <div>
                                 <input
+                                    onChange={this.handleInput}
                                     type="text"
+                                    name={"name"}
                                     minLength={3}
                                     maxLength={30}
                                     required
@@ -46,6 +65,7 @@ class FormularioIdeas extends Component {
                                     <select
                                         name="role"
                                         required
+                                        onChange={this.handleInput}
                                     >
                                         <option value={""}>Selecciona una opción</option>
                                         <option>Fouter</option>
@@ -63,6 +83,7 @@ class FormularioIdeas extends Component {
                             </div>
                             <div >
                                 <textarea
+                                    onChange={this.handleInput}
                                     name="description"
                                     placeholder="Introduce una pequeña descripción"
                                     minLength={10}
@@ -99,6 +120,12 @@ class FormularioIdeas extends Component {
     }
 }
 
+const mapDispatchToProps = (dispatch) => {
+    return{
+        onAddIdea: (IDEA) => {
+            dispatch (addIdea(IDEA));
+        }
+    }
+};
 
-export default FormularioIdeas;
-
+export default connect (null, mapDispatchToProps)(FormularioIdeas);

@@ -8,7 +8,7 @@ const TablaMostrarDatosUser = (props) =>{
 
         const mapUsers = user.map((item,i) => {
             return(
-                <div className="card" key={item.id} id={item.id}>
+                <div className="card" key={item._id} id={item._id}>
 
                     <div className="grid-container" >
                         <div id="name">
