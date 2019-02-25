@@ -72,13 +72,5 @@ const mapStateToProps = (state, props) => ({
     citiesR: state
 });
 
-const mapDispatchToPropsCity = (dispatch, props) => {
-    return {
-        deleteCity: (id) => {
-            dispatch(deleteCity(id))
-        }
-    }
-};
-
-export default connect(mapStateToProps, mapDispatchToPropsCity)(TarjetasMostrarDatosCity);
+export default connect(mapStateToProps, {deleteCity})(TarjetasMostrarDatosCity);
 

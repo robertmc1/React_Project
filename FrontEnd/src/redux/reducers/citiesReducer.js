@@ -1,7 +1,7 @@
 
 export const actionType = {
     addCity : '@CITY -> ADD',
-    deleteCity : '@CITY -> BULK DELETE'
+    deleteCity : '@CITY -> DELETE'
 };
 
 const cityReducer = (state = [], action) => {
