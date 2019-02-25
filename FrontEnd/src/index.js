@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-
-import './index.css';
+import axios from 'axios'
 
 import createStore from './redux/createStore';
 import AppRouter from './components/AppRouter';
@@ -10,6 +9,35 @@ import * as serviceWorker from './serviceWorker';
 
 
 const store = createStore();
+
+const token =
+"eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJ1c2VySWQiOiI1YzU4MjcwNTgxOGYyYzI0M2FlYTNjZGEiLCJpYXQiOjE1NTEwNzg3MDksImV4cCI6MTU1MTE2NTEwOSwiYXVkIjoiaHR0cHM6Ly95b3VyZG9tYWluLmNvbSIsImlzcyI6ImZlYXRoZXJzIiwic3ViIjoiYW5vbnltb3VzIiwianRpIjoiMjg4MmViYTgtM2E1Zi00ZWI3LWIxNTEtZjgxZTE3YjJmN2M1In0.TRKTCiKZrPuHgeNFX513oEyE-JC8EKUDMGDYxNDZ9UA";
+
+var config = {
+
+    headers: {'Authorization': token}
+};
+
+axios.get('http://52.213.25.226:3030/user', config)
+    .then(res => {
+        store.dispatch({type: '@USER -> ADD',
+            data: res.data.data})
+    })
+    .catch(err => console.log('No ha funcionado users', err));
+
+axios.get('http://52.213.25.226:3030/city', config)
+    .then(res => {
+        store.dispatch({type: '@CITY -> ADD',
+            data: res.data.data})
+    })
+    .catch(err => console.log('No ha funcionado users', err));
+
+axios.get('http://52.213.25.226:3030/idea', config)
+    .then(res => {
+        store.dispatch({type: '@IDEA -> ADD',
+            data: res.data.data})
+    })
+    .catch(err => console.log('No ha funcionado users', err));
 
 ReactDOM.render((
         <Provider store={store}>

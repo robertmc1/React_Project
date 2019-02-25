@@ -188,11 +188,6 @@ input:valid {
   text-decoration: none;
 }
 
-#cuadrotarjetas {
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-}
-
 /*----------TERJETSAS TERAM---------*/
 .container {
   min-height: 60%;
@@ -299,6 +294,9 @@ input:valid {
   border-bottom-color: #42acaf;
   max-width: 300px;
 }
+.teamForm1 .body .divs option:first-child {
+  background-color: rgba(95, 94, 92, 0.45);
+}
 .teamForm1 .body .divs textarea {
   min-width: 90%;
   min-height: 13vh;
@@ -317,15 +315,16 @@ input:valid {
   display: flex;
   flex-direction: row;
   margin-top: 8px;
+  flex-wrap: wrap;
 }
 .teamForm1 .body .divs .BMdiv select {
-  min-width: 255px;
+  min-width: 180px;
   max-width: 350px;
   border-bottom-color: #42acaf;
 }
 .teamForm1 .body .divs .BMdiv .subtitles3 {
   color: #ff381a;
-  font-weight: bold;
+  font-size: 15px;
   padding-left: 10px;
 }
 .teamForm1 .body .divs .BMdiv .subtitles3 div {
@@ -378,8 +377,10 @@ input:valid {
 }
 @media screen and (max-width: 440px) {
   #demiumTitle {
-    font-size: 15px;
-    margin-top: 15px;
+    margin-top: 13px;
+    font-size: 11px;
+    font-weight: bold;
+    transform: rotate(-45deg);
   }
 }
 
@@ -390,9 +391,8 @@ input:valid {
   padding: 14px 16px;
 }
 #header a:hover {
-  font-size: 18px;
-  font-weight: bold;
   border-radius: 10%;
+  border: 1px solid #f7fcff;
 }
 
 .botonesMenu {
