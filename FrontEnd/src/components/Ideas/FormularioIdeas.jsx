@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import {addIdea} from "../redux/actions/ideaAction";
+import {addIdea} from "../../redux/actions/ideaAction";
 
 class FormularioIdeas extends Component {
     constructor(){

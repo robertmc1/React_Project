@@ -1,6 +1,6 @@
 import  React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {addCity} from "../redux/actions/citiesActions";
+import {addCity} from "../../redux/actions/citiesActions";
 
 
 class FormularioAddCity extends Component {

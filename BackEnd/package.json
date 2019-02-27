@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "start": "SET \"NODE_ENV=production\" || export NODE_ENV=production || NODE_ENV=production && node index.js",
+=======
+    "start": " export NODE_ENV=development || NODE_ENV=development || SET \"NODE_ENV=development\" && node index.js",
+>>>>>>> produccion
     "dev": " export NODE_ENV=development || NODE_ENV=development || SET \"NODE_ENV=development\" && nodemon index.js"
   },
   "author": "",

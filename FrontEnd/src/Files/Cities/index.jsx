@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from 'react-redux';
-import TablaMostrarDatosCity from "../../components/TarjetasMostrarDatosCity"
+import TablaMostrarDatosCity from "../../components/Cities/TarjetasMostrarDatosCity"
 
 const Cities = (props) => {
     console.log(props);

@@ -1,6 +1,6 @@
 import  React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {addUser} from '../redux/actions/userActions';
+import {addUser} from '../../redux/actions/userActions';
 
 class FormularioAddUser extends Component {
     constructor() {

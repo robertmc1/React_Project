@@ -1,5 +1,5 @@
 import React from "react";
-import FormularioIdeas from "../../components/FormularioIdeas";
+import FormularioIdeas from "../../components/Ideas/FormularioIdeas";
 
 const IdeasForm = (props) => {
     return (
