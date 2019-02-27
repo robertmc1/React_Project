@@ -1,5 +1,5 @@
 import React from "react";
-import TarjetasIdea from "../../components/TarjetasIdeas";
+import TarjetasIdea from "../../components/Ideas/TarjetasIdeas";
 import {Link} from "react-router-dom";
 
 const Ideas = (props) => {

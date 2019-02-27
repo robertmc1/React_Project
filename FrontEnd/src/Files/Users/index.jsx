@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import TablaMostrarDatosUser from "../../components/TablaMostrarDatosUser";
+import TablaMostrarDatosUser from "../../components/Users/TablaMostrarDatosUser";
 
 const Users = (props) => {
     console.log(props);

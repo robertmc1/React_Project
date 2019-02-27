@@ -1,5 +1,5 @@
 import React from "react";
-import FormularioTeams from "../../components/FormularioTeams";
+import FormularioTeams from "../../components/Teams/FormularioTeams";
 
 const TeamsForm = (props) => {
     return (

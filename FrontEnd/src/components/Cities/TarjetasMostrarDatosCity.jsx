@@ -1,7 +1,7 @@
 import  React from 'react';
 import {connect} from 'react-redux';
 import FormularioAddCity from "./FormularioAddCity";
-import {deleteCity} from "../redux/actions/citiesActions";
+import {deleteCity} from "../../redux/actions/citiesActions";
 
 const TarjetasMostrarDatosCity = (props) =>{
 
